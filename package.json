@@ -1,0 +1,14 @@
+{
+  "name": "saft-file-manager",
+  "version": "1.0.0",
+  "description": "This a lib to manage any saft-file",
+  "main": "saft-home",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "saft-file"
+  ],
+  "author": "Adelino Safeca",
+  "license": "ISC"
+}
