@@ -2,13 +2,32 @@
   "name": "saft-file-manager",
   "version": "1.0.0",
   "description": "This a lib to manage any saft-file",
-  "main": "saft-home",
+  "main": "./dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "http://massinga.minfin.gov.ao:81/saft-file-manager.git"
+  },
   "scripts": {
-    "test": "test"
+    "build": "tsc",
+    "start": "tsc && node dist/index.js",
+    "test": "jest --config jestconfig.json"
   },
   "keywords": [
     "saft-file"
   ],
   "author": "Adelino Safeca",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "file-type": "^17.1.1",
+    "xml2js": "^0.4.23",
+    "xmldom": "^0.6.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.5.1",
+    "@types/xml2js": "^0.4.11",
+    "@types/xmldom": "^0.1.31",
+    "jest": "^28.1.0",
+    "ts-jest": "^28.0.2",
+    "typescript": "^4.6.4"
+  }
 }
