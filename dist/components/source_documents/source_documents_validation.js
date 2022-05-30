@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.SourceDocumentsValidation = void 0;
+var iresult_1 = require("../commons/iresult");
 var sales_invoices_1 = require("./sales_invoices");
 var SourceDocumentsValidation = /** @class */ (function () {
     function SourceDocumentsValidation() {
@@ -9,11 +10,12 @@ var SourceDocumentsValidation = /** @class */ (function () {
         var childNode = _a.childNode, matchList = _a.matchList;
         for (var k = 0; k < matchList.length; k++) {
             var entry = matchList[k];
-            if (!(this.isElementValid({ element: entry, childNode: childNode }))) {
-                return false;
+            var result = this.isElementValid({ element: entry, childNode: childNode });
+            if (!(result.success)) {
+                return result;
             }
         }
-        return true;
+        return new iresult_1.DataResult({ message: "Ficheiro valido", success: true });
     };
     SourceDocumentsValidation.prototype.isElementValid = function (_a) {
         var element = _a.element, childNode = _a.childNode;
@@ -24,17 +26,19 @@ var SourceDocumentsValidation = /** @class */ (function () {
                     // IF DOES NOT HAVE VALID CHILDREN
                     if (!(sourceDocumentElement.childNodes.length - 1 <= 0)) {
                         var salesInvoicesNodes = sourceDocumentElement.childNodes;
-                        if (!(sales_invoices_1.SalesInvoices.isSalesInvoicesValid({ nodeList: salesInvoicesNodes }))) {
-                            return false;
+                        var result = sales_invoices_1.SalesInvoices.isSalesInvoicesValid({ nodeList: salesInvoicesNodes });
+                        if (!(result.success)) {
+                            return result;
                         }
                     }
                     else {
-                        return false;
+                        return new iresult_1.DataResult({ success: false,
+                            message: "Ficheiro inv\u00E1lido. [".concat(sourceDocumentElement.nodeName, "]") });
                     }
                 }
             }
         }
-        return true;
+        return new iresult_1.DataResult({ message: "Ficheiro valido", success: true });
     };
     return SourceDocumentsValidation;
 }());

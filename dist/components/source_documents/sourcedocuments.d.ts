@@ -1,5 +1,6 @@
+import { IDataResult } from "../commons/iresult";
 export declare class SourceDocuments {
-    private childNode;
-    constructor(childNode: ChildNode);
-    isSourceDocumentsValid(): boolean;
+    static isSourceDocumentsValid({ sourceNodeList }: {
+        sourceNodeList: NodeListOf<ChildNode>;
+    }): IDataResult;
 }

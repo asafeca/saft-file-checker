@@ -16,7 +16,7 @@
       <Province>Viana Park</Province>
       <Country>AO</Country>
     </CompanyAddress>
-    <FiscalYear>2021</FiscalYear>
+    <FiscalYear>2021-</FiscalYear>
     <StartDate>2021-10-01</StartDate>
     <EndDate>2021-10-31</EndDate>
     <CurrencyCode>AOA</CurrencyCode>
@@ -47,7 +47,7 @@
         <AddressDetail>Desconhecido</AddressDetail>
         <City>Desconhecido</City>
         <PostalCode>0000</PostalCode>
-        <Province>LUANDA</Province>
+        <Province>Desconhecido</Province>
         <Country>Desconhecido</Country>
       </ShipToAddress>
       <SelfBillingIndicator>0</SelfBillingIndicator>
@@ -2980,7 +2980,7 @@
         </DocumentStatus>
         <Hash>G/Hkki4otA6HgWP7g8fnLh0GYl9D1x7dmFWHen/Zg4ps8I+i3YDpw8tuO3qdHwg7AokApr7I5jPpJ0X31M2RuwdIkTVW1EzowTUVePDyHqC4vV0DckUnXpCzSL39ca5+kSqr/OSxGuuTR/LY4lkPEme7I1kWWProWA/+/kcI4Ts=</Hash>
         <HashControl>1</HashControl>
-        <Period>10</Period>
+        <Period></Period>
         <InvoiceDate>2021-10-20</InvoiceDate>
         <InvoiceType>FT</InvoiceType>
         <SpecialRegimes>
@@ -9819,6 +9819,12 @@
         <SourceID>Cristovao Madaleno</SourceID>
         <SystemEntryDate>2021-10-25T17:03:47</SystemEntryDate>
         <CustomerID>AO5000163732_C</CustomerID>
+
+
+
+
+
+        
         <Line>
           <LineNumber>1</LineNumber>
           <ProductCode>FAMAMLO00009</ProductCode>

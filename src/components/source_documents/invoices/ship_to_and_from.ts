@@ -1,25 +1,27 @@
 import { SaftAttributeModel } from "../../../domain/models/HeaderAttributeModel";
+import { DataResult, IDataResult } from "../../commons/iresult";
 import { SaftAttributeList } from "../../commons/saft_attributes_list";
 
 export class ShipToAndFromValidation{
 
     static shipToAndFromValid({attributeList, nodeList}:
-        {attributeList:Array<SaftAttributeModel>, nodeList:NodeListOf<ChildNode>}):boolean{
+        {attributeList:Array<SaftAttributeModel>, nodeList:NodeListOf<ChildNode>}):IDataResult{
 
             for(let shipIndex =0; shipIndex<attributeList.length; shipIndex++){
                 const attribute = attributeList[shipIndex]
-                if(!(this.attributeIsInTheNode({element: attribute, nodeList}))){
-                    return false
+                const result = this.attributeIsInTheNode({element: attribute, nodeList})
+                if(!(result.success)){
+                    return result
                 }
             }
 
 
-            return true
+            return new DataResult({message:"Ficheiro valido", success:true})
 
     }
 
     private static attributeIsInTheNode({element, nodeList}:
-        {element: SaftAttributeModel, nodeList:NodeListOf<ChildNode>}):boolean{
+        {element: SaftAttributeModel, nodeList:NodeListOf<ChildNode>}):IDataResult{
             
             for(let nodeIndex = 0; nodeIndex< nodeList.length; nodeIndex++){
                 const shipNode = nodeList[nodeIndex]
@@ -30,34 +32,35 @@ export class ShipToAndFromValidation{
                         for(let x = 0; x < addressNodes.length; x++){
                         }
                         const addressAttributes = SaftAttributeList.ShipToAndShipFromAddressAttributes
-                        if(!(this.shipToAndFromValid({attributeList:addressAttributes, nodeList:addressNodes}))){
-                            return false
+                        const result = this.shipToAndFromValid({attributeList:addressAttributes, nodeList:addressNodes})
+                        if(!(result.success)){
+                            return result
                         }
                     }
 
-                    return true
+                    return new DataResult({message:"Ficheiro valido", success:true})
                 }
 
             }
 
-        return false
+        return new DataResult({message:`Ficheiro inválido. [${element.getName()}] não encontrado`, success:false})
     }
 
 
     private static isAddressValid({element, nodeList}:
-        {element:SaftAttributeModel, nodeList:NodeListOf<ChildNode>}):boolean{
+        {element:SaftAttributeModel, nodeList:NodeListOf<ChildNode>}):IDataResult{
             for(let nodeIndex = 0; nodeIndex < nodeList.length; nodeIndex++){
                 const nodeElement = nodeList[nodeIndex]
 
                 if(nodeElement.nodeName === element.getName()){
-                    return true
+                    return new DataResult({message:"Ficheiro valido", success:true})
                 }
 
 
             }
 
 
-            return false
+            return new DataResult({message:`Ficheiro inválido. [${element.getName()}] não encontrado`, success:false})
 
     }
 

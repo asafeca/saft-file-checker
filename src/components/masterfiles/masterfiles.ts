@@ -1,140 +1,61 @@
-import { SaftAttributeModel } from "../../domain/models/HeaderAttributeModel";
+import { DataResult, IDataResult } from "../commons/iresult";
 import { SaftAttributeList } from "../commons/saft_attributes_list";
 import { SaftValidation } from "../commons/saft_validation";
+import { CustomerValidation } from "./customer";
+import { TaxTableValidation } from "./tax_table";
 
 export class MasterFiles{
-    private masterFileNode:ChildNode
-    constructor(masterFileNode:ChildNode){
-        this.masterFileNode = masterFileNode;
 
-    }
+   static  isMasterFileValid(nodeList:NodeListOf<ChildNode>):IDataResult{
+       if(!(nodeList.length -1 <=0)){
 
-     isMasterFileValid():boolean{
-        if(this.masterFileNode!==null && this.masterFileNode!==undefined && this.masterFileNode.hasChildNodes()){
-            let masterElements = SaftAttributeList.MasterfilesElements
-            for(let x = 0; x<masterElements.length;x++){
-                if(!(this.checkMasterElement({element: masterElements[x], childNode:this.masterFileNode}))){
-                    return false;
+           // VERIFY IF ALL ATTRIBUTES ARE IN THE NODE
+           const attributes = SaftAttributeList.MasterfilesElements
+           const masterResult = SaftValidation.verifyAttributesInTheNodes({attributes,nodeList})
+
+           if(!(masterResult.success)){
+               return masterResult
+           }
+
+           for(let masterKey of Object.keys(nodeList)){
+
+            const currentNode = nodeList[masterKey as any]
+    
+            if(currentNode.nodeName === "Customer"){
+
+                const result = CustomerValidation.isCustomerValid({customerNodeList: currentNode.childNodes})
+                if(!(result.success)){
+                    return result
                 }
                 
             }
 
-
-            return true;
-
-        }
-
-        return false;
-    }
-
-    private checkMasterElement({element, childNode}:{element: SaftAttributeModel, childNode:ChildNode}):boolean{
-        for(let k = 0; k< childNode.childNodes.length;k++){
-            let child = childNode.childNodes[k];
-            if(element.getName()===child.nodeName){
-                if(child.hasChildNodes()){
-                    if(element.getName() === "Customer"){
-                        let customerAttrTemplateList = SaftAttributeList.CustomerAttributes
-                        for(let x =0; x < customerAttrTemplateList.length; x++){
-                            
-                            if(!(this.checkCustomerElement({element: customerAttrTemplateList[x],customerNode:child}))){
-                                return false;
-                            }
-                        }
-                    }
-                    else if(element.getName() === "Product"){
-
-                        if(!(this.isProductValid({childNode: child}))){
-                            return false
-                        }
-
-                    }
-                    else if(element.getName() === "TaxTable"){
-                        if(!(this.isTaxTableValid({childNode:child}))){
-                            return false;
-                        }
-                    }
-
-                }
-                else{
-
-                    return false;
-
-                }
-
-                
-            }
-
-        }
-
-        return true;
-    }
-
-    private isProductValid({childNode}:{childNode:ChildNode}):boolean{
-        let attrList = SaftAttributeList.ProductAttributes
-         for(let k =0; k< attrList.length;k++){
-             if(!(new SaftValidation().isElementValid({element:attrList[k], childNode:childNode}))){
-                 return false
-             }
-         }
-
-
-        return true
-    }
-
-
-    private checkCustomerElement({element,customerNode}:
-        {element: SaftAttributeModel,customerNode:ChildNode}):boolean{
-        for(let x =0; x< customerNode.childNodes.length;x++){
-            if(customerNode.childNodes[x].nodeName !=="#text"){
-                let currentNode = customerNode.childNodes[x]
-                if(element.getName() === currentNode.nodeName){
-                    if(currentNode.nodeName === "BillingAddress" || currentNode.nodeName === "ShipToAddress"){
-                        if(!(this.isAddressValid(currentNode))){
-
-                            return false;
-                        }
-                    }
-                 
-                    return true
+            else if(currentNode.nodeName === "Product"){
+                const productNodes = currentNode.childNodes
+                const attributes = SaftAttributeList.ProductAttributes
+                const result = SaftValidation.verifyAttributesInTheNodes({attributes, nodeList:productNodes})
+                if(!result.success){
+                    return result
                 }
             }
 
-        }
+            else if(currentNode.nodeName === "TaxTable"){
+                const taxNodes = currentNode.childNodes
+                const taxResult = TaxTableValidation.isTaxTableValid({nodeList: taxNodes})
+                    if(!(taxResult.success)){
 
-        return false;
+                        return taxResult
 
+                    }
+
+            }
+
+           }
+
+       }
+
+
+
+        return new DataResult({success:true, message:`Ficheiro válido`});
     }
-
-    private isAddressValid(childNode:ChildNode):boolean{
-           if(!(new SaftValidation().childNodeChildrenMatch(
-               {childNode:childNode, matchList: SaftAttributeList.BillingAndShipToAddressAttributes}))){
-                   return false
-               }
-
-
-        return true;
-    }
-
-
- 
-
-    private isTaxTableValid({childNode}:{childNode:ChildNode}):boolean{
-    for(let x = 0; x < childNode.childNodes.length; x++){
-        let attribute = childNode.childNodes[x]
-        if(attribute.nodeName !=="#text"){
-         let taxEntryList = SaftAttributeList.TaxTableEntryAttributes
-        if(!(new SaftValidation().childNodeChildrenMatch({childNode:attribute,matchList:taxEntryList}))){
-            return false;
-        }
-    }
-        
-    }
-
-        return true
-
-    }
-
-
-
-
 }

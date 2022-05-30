@@ -1,8 +1,8 @@
 import { SaftAttributeModel } from "../../../../domain/models/HeaderAttributeModel";
+import { IDataResult } from "../../../commons/iresult";
 export declare class LineValidation {
-    static isLineValid({ attributeList, lineNodes }: {
-        attributeList: Array<SaftAttributeModel>;
+    static isLineValid({ lineNodes, invoiceType }: {
         lineNodes: NodeListOf<ChildNode>;
-    }): boolean;
-    private static lineChildrenValid;
+        invoiceType: SaftAttributeModel;
+    }): IDataResult;
 }

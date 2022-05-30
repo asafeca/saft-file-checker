@@ -1,47 +1,33 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.CurrencyValidation = void 0;
+var iresult_1 = require("../../../commons/iresult");
+var saft_attributes_list_1 = require("../../../commons/saft_attributes_list");
+var saft_validation_1 = require("../../../commons/saft_validation");
 var CurrencyValidation = /** @class */ (function () {
     function CurrencyValidation() {
     }
-    CurrencyValidation.isCurrencyValidation = function (_a) {
-        var attributeList = _a.attributeList, currencyNodes = _a.currencyNodes;
-        // FIRST CHECK IF CURRENCY EXISTS
-        if (!this.isCurrencyInTheNode(currencyNodes)) {
-            return true;
-        }
-        for (var attrIndex = 0; attrIndex < attributeList.length; attrIndex++) {
-            var attribute = attributeList[attrIndex];
-            if (!(this.isAttributeFoundInNode({ element: attribute, currencyNodes: currencyNodes }))) {
-                console.log("".concat(attribute.getName(), "   ::::::::::::::::::::::::HERE"));
-                return false;
+    CurrencyValidation.isCurrencyValid = function (totalsNodes) {
+        var currencyAttributes = saft_attributes_list_1.SaftAttributeList.CurrencyAttributes;
+        for (var _i = 0, _a = Object.keys(totalsNodes); _i < _a.length; _i++) {
+            var nodeKey = _a[_i];
+            var currentNode = totalsNodes[nodeKey];
+            if (currentNode.nodeName === "Currency") {
+                var currencyNodes = currentNode.childNodes;
+                if (!(currencyNodes.length - 1 <= 0)) {
+                    var currencyResult = saft_validation_1.SaftValidation.verifyAttributesInTheNodes({
+                        attributes: currencyAttributes, nodeList: currencyNodes
+                    });
+                    if (!currencyResult.success) {
+                        return currencyResult;
+                    }
+                }
+                else {
+                    return new iresult_1.DataResult({ message: "Elemento [Currency] inválido", success: false });
+                }
             }
         }
-        return true;
-    };
-    CurrencyValidation.isAttributeFoundInNode = function (_a) {
-        var element = _a.element, currencyNodes = _a.currencyNodes;
-        if (element.getName() === "CurrencyCode" ||
-            element.getName() === "CurrencyAmount" ||
-            element.getName() === "ExchangeRate") {
-            return true;
-        }
-        for (var nodeIndex = 0; nodeIndex < currencyNodes.length; nodeIndex++) {
-            var currencyNode = currencyNodes[nodeIndex];
-            if (currencyNode.nodeName === element.getName()) {
-                return true;
-            }
-        }
-        return false;
-    };
-    CurrencyValidation.isCurrencyInTheNode = function (totalNodes) {
-        for (var index = 0; index < totalNodes.length; index++) {
-            var currentnode = totalNodes[index];
-            if (currentnode.nodeName === "Currency") {
-                return true;
-            }
-        }
-        return false;
+        return new iresult_1.DataResult({ message: "Elemento válido", success: true });
     };
     return CurrencyValidation;
 }());

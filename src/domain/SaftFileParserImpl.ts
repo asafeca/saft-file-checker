@@ -5,7 +5,7 @@ import {DOMParser} from "xmldom"
 import { SaftHeader } from "../components/header/Header";
 import { MasterFiles } from "../components/masterfiles/masterfiles";
 import { SourceDocuments } from "../components/source_documents/sourcedocuments";
-import { Utils } from "../components/commons/utils";
+import { DataResult, IDataResult } from "../components/commons/iresult";
 
 
 export class SaftFileParserImpl implements SaftFileParser{
@@ -17,10 +17,9 @@ export class SaftFileParserImpl implements SaftFileParser{
   return  os.platform();
       
    }
-    parse(file: Uint8Array):string{
+    parse(file: Uint8Array):IDataResult{
 
     const MAX = 99999;
-    let  DATA_RESULT ="Ficheiro válido";
     let randomFileName = Math.max(Math.random()*MAX)
       fs.writeFileSync(randomFileName.toString(), file)
 
@@ -29,42 +28,72 @@ export class SaftFileParserImpl implements SaftFileParser{
    const stringBuffer = buffer.toString("utf8");
    let xmlDocument = this.xmlParser.parseFromString(stringBuffer, "application/xml");
 
+   const rootNodes = xmlDocument.childNodes
+   if(!(rootNodes.length -1 <=0)){
+     for(let rootIndex of Object.keys(rootNodes)){
+       const rootElement = rootNodes[rootIndex as any]
 
-  Utils.forEach(xmlDocument as any, (root) => {
-      if (!root.nodeName || root.nodeName == "#text") return;
-      if(root.nodeName === "AuditFile"){
-        // GET ALL CHILDREN FORM AUDITFILE
-        Utils.forEach(root, (auditFile)=>{
-          if(!auditFile.nodeName || auditFile.nodeName !=="#text"){
-            // CHECKING AND VALIDATE HEADER
-            if(auditFile.nodeName === "Header"){
-              if(!(new SaftHeader(auditFile).isHeaderValid())) {
-                DATA_RESULT = "Ficheiro inválido [HEADER]"
+       if(rootElement.nodeName !=="#text" && rootElement.nodeName !==undefined){
+
+        if(rootElement.nodeName === "AuditFile"){
+          const auditFileNodes = rootElement.childNodes
+          
+          for(let auditIndex of Object.keys(auditFileNodes)){
+            let auditCurrentChild = auditFileNodes[auditIndex as any]
+
+            // CHECKING HEADER
+            if(auditCurrentChild.nodeName === "Header"){
+
+              const result =  SaftHeader.isHeaderValid(auditCurrentChild.childNodes)
+
+              if(!(result.success)){
+
+                return result
+
               }
-            }
-            // CHECKING AND VALIDATE MASTERFILES
-            else if(auditFile.nodeName === "MasterFiles"){
-              if(!(new MasterFiles(auditFile).isMasterFileValid())){
-                DATA_RESULT = "Ficheiro inválido [MasterFIles]"
-              }
-            }
-            else if(auditFile.nodeName === "SourceDocuments"){
-             if(!(new SourceDocuments(auditFile).isSourceDocumentsValid())){
-               DATA_RESULT = "Ficheiro Inválido [SourceDocuments]"
-             }
 
             }
+
+            // CHECKING MASTERFILES  // CHECKING 
+            
+            else if(auditCurrentChild.nodeName === "MasterFiles"){
+              const masterNodes = auditCurrentChild.childNodes
+
+              const result = MasterFiles.isMasterFileValid(masterNodes)
+              
+              if(!(result.success)){
+                return result
+              }
+
+            }
+            else if(auditCurrentChild.nodeName=== "SourceDocuments"){
+              const sourceNodes = auditCurrentChild.childNodes
+
+              const result = SourceDocuments.isSourceDocumentsValid({sourceNodeList:sourceNodes})
+              if(!result.success){
+                return result
+              }
+
+
+            }
+
+
           }
 
-        })
+        }
+      
 
-      }
+       }
 
-   })
+     }
 
-   return DATA_RESULT;
+   }
+
+   else{new DataResult({message:"Ficheiro inválido. Element ROOT não encontrado!", success:false})}
+
+
+   return new DataResult({message:"Ficheiro valido", success:true})
         
     }
-    
 }
 

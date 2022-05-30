@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.TaxExemption = void 0;
+var iresult_1 = require("../../commons/iresult");
 var TaxExemption = /** @class */ (function () {
     function TaxExemption() {
     }
@@ -8,12 +9,12 @@ var TaxExemption = /** @class */ (function () {
         var code = this.checkExemptionReasonOrCode({ param: "TaxExemptionCode", nodeList: nodeList });
         var reason = this.checkExemptionReasonOrCode({ param: "TaxExemptionReason", nodeList: nodeList });
         if (reason && !code) {
-            return false;
+            return new iresult_1.DataResult({ message: "FIcheiro Inv\u00E1lido. [".concat(code, "] n\u00E3o encontrado"), success: false });
         }
         else if (!reason && code) {
-            return false;
+            return new iresult_1.DataResult({ message: "FIcheiro Inv\u00E1lido. [".concat(reason, "] n\u00E3o encontrado"), success: false });
         }
-        return true;
+        return new iresult_1.DataResult({ message: "Ficheiro valido", success: true });
     };
     TaxExemption.checkExemptionReasonOrCode = function (_a) {
         var param = _a.param, nodeList = _a.nodeList;

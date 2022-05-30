@@ -1,6 +1,7 @@
+import { IDataResult } from "../commons/iresult";
 export declare class SalesInvoices {
     static isSalesInvoicesValid({ nodeList }: {
         nodeList: NodeListOf<ChildNode>;
-    }): boolean;
+    }): IDataResult;
     private static attributeExistsInTheNode;
 }

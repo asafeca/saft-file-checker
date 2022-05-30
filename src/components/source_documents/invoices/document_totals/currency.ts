@@ -1,67 +1,45 @@
-import { SaftAttributeModel } from "../../../../domain/models/HeaderAttributeModel";
+import { DataResult, IDataResult } from "../../../commons/iresult";
+import { SaftAttributeList } from "../../../commons/saft_attributes_list";
+import { SaftValidation } from "../../../commons/saft_validation";
+
 
 export class CurrencyValidation{
-    static isCurrencyValidation({attributeList, currencyNodes}:
-        {attributeList:Array<SaftAttributeModel>, currencyNodes:NodeListOf<ChildNode>}):boolean{
 
-            // FIRST CHECK IF CURRENCY EXISTS
-            if(!this.isCurrencyInTheNode(currencyNodes)){
+    static isCurrencyValid(totalsNodes:NodeListOf<ChildNode>):IDataResult{
+        const currencyAttributes = SaftAttributeList.CurrencyAttributes
 
-                return true
+        for(let nodeKey of Object.keys(totalsNodes) ){
+            const currentNode = totalsNodes[nodeKey as any]
+            if(currentNode.nodeName === "Currency"){
+                const currencyNodes = currentNode.childNodes
 
-            }
+                if(!(currencyNodes.length -1 <=0)){
 
-            for(let attrIndex =0 ; attrIndex< attributeList.length; attrIndex++){
-                const attribute = attributeList[attrIndex]
+                    const currencyResult = SaftValidation.verifyAttributesInTheNodes({
+                        attributes:currencyAttributes, nodeList: currencyNodes})
+                        
 
-                if(!(this.isAttributeFoundInNode({element:attribute, currencyNodes}))){
-                    console.log(`${attribute.getName()}   ::::::::::::::::::::::::HERE`)
-               
-                    return false
+                        if(!currencyResult.success){
+
+                            
+                            return currencyResult
+
+                        }
                 }
 
-                
-
-                
-
-            }
-
-            return true
-
-    }
-
-   private static isAttributeFoundInNode({element, currencyNodes}:
-        {element:SaftAttributeModel, currencyNodes:NodeListOf<ChildNode>}):boolean{
-
-            if(element.getName() === "CurrencyCode" || 
-            element.getName() === "CurrencyAmount" || 
-            element.getName() === "ExchangeRate"){
-           
-                return true
-            }
-
-            for(let nodeIndex = 0; nodeIndex < currencyNodes.length; nodeIndex++){
-                const currencyNode = currencyNodes[nodeIndex]
-                if(currencyNode.nodeName === element.getName()){
-                    return true
+                else{
+                    return new DataResult({message:"Elemento [Currency] inválido", success:false})
                 }
-
-            }
-
-        return false
-    }
-
-
-    private static isCurrencyInTheNode(totalNodes:NodeListOf<ChildNode>):boolean{
-        for(let index = 0; index < totalNodes.length; index++){
-            const currentnode = totalNodes[index]
-            if(currentnode.nodeName === "Currency"){
-
-                return true
             }
         }
 
 
-        return false
+
+        return new DataResult({message:"Elemento válido", success:true})
+
     }
+
+
+
+    
 }

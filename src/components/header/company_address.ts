@@ -1,3 +1,4 @@
+import { DataResult, IDataResult } from "../commons/iresult";
 import { SaftValidation } from "../commons/saft_validation";
 
 export class SaftCompanyAddress{
@@ -6,21 +7,27 @@ export class SaftCompanyAddress{
         this.address = address
     }
 
-    isCompanyAddressValid():Boolean{
+    isCompanyAddressValid():IDataResult{
         if(this.address !==null &&  this.address!==undefined){
             for(let x = 0;x< this.address.childNodes.length;x++){
-                if(this.address.childNodes[x].nodeName !=="#text"){
+                const currentNode = this.address.childNodes[x]
+                if(currentNode.nodeName !=="#text"){
+
                         if(!(SaftValidation.isString(this.address.childNodes[x].textContent))){
 
-                            return false;
+                            return new DataResult({
+                                 message: `Ficheiro inválido [${currentNode.nodeName}] não encontrado`, 
+                                 success:false});
                         }
                 }
          
             }
-            return true;
+            return new DataResult({message:"Ficheiro valido", success:true})
         }
 
-       return false
+       return new DataResult({
+        message: `Ficheiro inválido [Address] não é válido`, 
+        success:false});
 
     }
 

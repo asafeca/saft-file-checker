@@ -1,8 +1,7 @@
-import { SaftAttributeModel } from "../../../../domain/models/HeaderAttributeModel";
+import { IDataResult } from "../../../commons/iresult";
 export declare class DocumentTotalsValidation {
-    static isDocumentTotalsValid({ totalsAttributes, totalsNodes }: {
-        totalsAttributes: Array<SaftAttributeModel>;
+    static isDocumentTotalsValid({ totalsNodes }: {
         totalsNodes: NodeListOf<ChildNode>;
-    }): boolean;
-    private static attributeIsInTheNode;
+    }): IDataResult;
+    private static currencyExistsInTheNode;
 }

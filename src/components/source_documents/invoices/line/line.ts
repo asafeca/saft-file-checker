@@ -1,56 +1,57 @@
 import { SaftAttributeModel } from "../../../../domain/models/HeaderAttributeModel"
+import { DataResult, IDataResult } from "../../../commons/iresult"
 import { SaftAttributeList } from "../../../commons/saft_attributes_list"
-import { TaxExemption } from "../tax_exemptions"
-import { TaxValidation } from "./tax"
+import { SaftValidation } from "../../../commons/saft_validation"
 
 export class LineValidation{
 
-    static isLineValid({attributeList,lineNodes}:
-        {attributeList:Array<SaftAttributeModel>,lineNodes:NodeListOf<ChildNode>}):boolean{
-        for(let attributeIndex = 0; attributeIndex < attributeList.length; attributeIndex++){
-            let attribute = attributeList[attributeIndex]
-        
-            if(!(this.lineChildrenValid({element: attribute, lineNodes}))){
-              
-                return false
-            }
-        }
+    static isLineValid({lineNodes,invoiceType }:
+        {lineNodes:NodeListOf<ChildNode>, 
+            invoiceType: SaftAttributeModel}):IDataResult{
 
-        return true
-    }
+                const lineAttributeList = invoiceType.getName() =="NC"? 
+                SaftAttributeList.NCLineAttributes: SaftAttributeList.FTLineAttributes
 
-    private static lineChildrenValid({element, lineNodes}:
-        {element:SaftAttributeModel,lineNodes:NodeListOf<ChildNode>}):boolean{
+                // CHECK ALL ATTRIBUTES
+                const lineResult =SaftValidation.verifyAttributesInTheNodes({nodeList:
+                    lineNodes,attributes: lineAttributeList})
 
-            // THEY ARE OPTIONAL ATTRIBUTES
-            if(element.getName() === "TaxExemptionReason" || element.getName()=== "TaxExemptionCode"){
-
-            return TaxExemption.validateExemptions(lineNodes)
-            }
-            for(let nodeIndex = 0;nodeIndex< lineNodes.length; nodeIndex++){
-                if(lineNodes[nodeIndex].nodeName === element.getName()){
-                    const currentNode = lineNodes[nodeIndex]
-                    if(currentNode.nodeName === "Tax"){
-                        const taxNodes = currentNode.childNodes;
-                        const taxAttributes = SaftAttributeList.LineTaxAttributes
-                        if(!(TaxValidation.isTaxValid({taxAttributeList: taxAttributes, taxNodes: taxNodes}))){
-                                
-                        return false
-                            
-                        }
-
-                        }
-
-                     return true
+                if(!lineResult.success){
+                    return lineResult
                 }
-             
-            }
-
-            console.log(element.getName())
-
-        return false
-    }
 
 
+                for(let nodeKey of Object.keys(lineNodes)){
+                    const currentNode = lineNodes[nodeKey as any]
+                    if(currentNode.nodeName === "Tax"){
+                        const taxNodes = currentNode.childNodes
+                        if(!(taxNodes.length-1 <=0)){
+
+                            const taxAttributes = SaftAttributeList.LineTaxAttributes
+                        const taxResult = SaftValidation.verifyAttributesInTheNodes({
+                            nodeList: taxNodes, attributes: taxAttributes
+                        })
+
+                        if(!(taxResult.success)){
+                            return taxResult
+                        }
+
+                        }
+                        else{
+
+
+                            return new DataResult({message:`Elemento [${currentNode.nodeName}] não válido!`, success:false})
+
+                        }
+                        
+
+                    }
+                }
+
+
+                return new DataResult({message:"Elemento válido", success:true})
+        
+
+        }
 
 }

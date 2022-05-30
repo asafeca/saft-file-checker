@@ -1,36 +1,37 @@
 import { SaftAttributeModel } from "../../../../domain/models/HeaderAttributeModel";
+import { DataResult, IDataResult } from "../../../commons/iresult";
 
 export class TaxValidation{
     static isTaxValid({taxAttributeList,taxNodes}:
-        {taxAttributeList:Array<SaftAttributeModel>,taxNodes:NodeListOf<ChildNode>}):boolean{
+        {taxAttributeList:Array<SaftAttributeModel>,taxNodes:NodeListOf<ChildNode>}):IDataResult{
             for(let attributeIndex = 0; attributeIndex < taxAttributeList.length; attributeIndex++){
                 let attribute = taxAttributeList[attributeIndex]
+
+                const result = this.taxChildValid({element: attribute, taxNodes})
             
-                if(!(this.taxChildValid({element: attribute, taxNodes}))){
-                    return false
+                if(!(result.success)){
+                    return result
                 }
             }
 
 
 
-            return true
+            return new DataResult({message:"Ficheiro valido", success:true})
 
     }
 
 
     private static taxChildValid({element, taxNodes}:
-        {element:SaftAttributeModel,taxNodes:NodeListOf<ChildNode>}):boolean{
+        {element:SaftAttributeModel,taxNodes:NodeListOf<ChildNode>}):IDataResult{
 
             for(let nodeIndex = 0; nodeIndex<taxNodes.length; nodeIndex++){
                 const taxNode = taxNodes[nodeIndex]
 
                 if(taxNode.nodeName === element.getName()){
-                    return true
+                    return new DataResult({message:"Ficheiro valido", success:true})
                 }
             }
 
-            console.log(element.getName())
-
-            return false
+            return new DataResult({success: false, message:`[${element.getName()}] não encontrado!`})
         }
 }

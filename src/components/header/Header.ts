@@ -1,3 +1,5 @@
+import { IOException } from "../commons/exceptions";
+import { DataResult, IDataResult } from "../commons/iresult";
 import { SaftAttributeList } from "../commons/saft_attributes_list";
 import { SaftValidation } from "../commons/saft_validation";
 
@@ -8,26 +10,18 @@ import { SaftValidation } from "../commons/saft_validation";
  * @date 2022/05/16
  */
 export class SaftHeader{
-    private header:ChildNode;
-    constructor(header:ChildNode){
-        this.header = header;
-    }
+   
 
- isHeaderValid():Boolean{
-     if(this.header !==null && this.header !== undefined){
-         if(this.header.hasChildNodes()){
+ static isHeaderValid(nodeList:NodeListOf<ChildNode>):IDataResult{
+         if(!(nodeList.length -1 <=0 )){
 
        // CHECK HEADER ATTRIBUTES
          let dataList= SaftAttributeList.HeaderAttributes;
-          
-        return  SaftValidation.checkHeaderAttributeList({attributeList: dataList, childNode: this.header})
-
+           return SaftValidation.checkHeaderAttributeList({attributeList: dataList, nodeList})
          }
-
-         return false;
- }
-
- return false 
+         else{
+            return new DataResult({message:`Ficheiro inválido. HEADER inválido`, success:false})
+         }
 
 }
 

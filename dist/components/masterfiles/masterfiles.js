@@ -1,101 +1,49 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.MasterFiles = void 0;
+var iresult_1 = require("../commons/iresult");
 var saft_attributes_list_1 = require("../commons/saft_attributes_list");
 var saft_validation_1 = require("../commons/saft_validation");
+var customer_1 = require("./customer");
+var tax_table_1 = require("./tax_table");
 var MasterFiles = /** @class */ (function () {
-    function MasterFiles(masterFileNode) {
-        this.masterFileNode = masterFileNode;
+    function MasterFiles() {
     }
-    MasterFiles.prototype.isMasterFileValid = function () {
-        if (this.masterFileNode !== null && this.masterFileNode !== undefined && this.masterFileNode.hasChildNodes()) {
-            var masterElements = saft_attributes_list_1.SaftAttributeList.MasterfilesElements;
-            for (var x = 0; x < masterElements.length; x++) {
-                if (!(this.checkMasterElement({ element: masterElements[x], childNode: this.masterFileNode }))) {
-                    return false;
-                }
+    MasterFiles.isMasterFileValid = function (nodeList) {
+        if (!(nodeList.length - 1 <= 0)) {
+            // VERIFY IF ALL ATTRIBUTES ARE IN THE NODE
+            var attributes = saft_attributes_list_1.SaftAttributeList.MasterfilesElements;
+            var masterResult = saft_validation_1.SaftValidation.verifyAttributesInTheNodes({ attributes: attributes, nodeList: nodeList });
+            if (!(masterResult.success)) {
+                return masterResult;
             }
-            return true;
-        }
-        return false;
-    };
-    MasterFiles.prototype.checkMasterElement = function (_a) {
-        var element = _a.element, childNode = _a.childNode;
-        for (var k = 0; k < childNode.childNodes.length; k++) {
-            var child = childNode.childNodes[k];
-            if (element.getName() === child.nodeName) {
-                if (child.hasChildNodes()) {
-                    if (element.getName() === "Customer") {
-                        var customerAttrTemplateList = saft_attributes_list_1.SaftAttributeList.CustomerAttributes;
-                        for (var x = 0; x < customerAttrTemplateList.length; x++) {
-                            if (!(this.checkCustomerElement({ element: customerAttrTemplateList[x], customerNode: child }))) {
-                                return false;
-                            }
-                        }
-                    }
-                    else if (element.getName() === "Product") {
-                        if (!(this.isProductValid({ childNode: child }))) {
-                            return false;
-                        }
-                    }
-                    else if (element.getName() === "TaxTable") {
-                        if (!(this.isTaxTableValid({ childNode: child }))) {
-                            return false;
-                        }
+            for (var _i = 0, _a = Object.keys(nodeList); _i < _a.length; _i++) {
+                var masterKey = _a[_i];
+                var currentNode = nodeList[masterKey];
+                if (currentNode.nodeName === "Customer") {
+                    var result = customer_1.CustomerValidation.isCustomerValid({ customerNodeList: currentNode.childNodes });
+                    if (!(result.success)) {
+                        return result;
                     }
                 }
-                else {
-                    return false;
-                }
-            }
-        }
-        return true;
-    };
-    MasterFiles.prototype.isProductValid = function (_a) {
-        var childNode = _a.childNode;
-        var attrList = saft_attributes_list_1.SaftAttributeList.ProductAttributes;
-        for (var k = 0; k < attrList.length; k++) {
-            if (!(new saft_validation_1.SaftValidation().isElementValid({ element: attrList[k], childNode: childNode }))) {
-                return false;
-            }
-        }
-        return true;
-    };
-    MasterFiles.prototype.checkCustomerElement = function (_a) {
-        var element = _a.element, customerNode = _a.customerNode;
-        for (var x = 0; x < customerNode.childNodes.length; x++) {
-            if (customerNode.childNodes[x].nodeName !== "#text") {
-                var currentNode = customerNode.childNodes[x];
-                if (element.getName() === currentNode.nodeName) {
-                    if (currentNode.nodeName === "BillingAddress" || currentNode.nodeName === "ShipToAddress") {
-                        if (!(this.isAddressValid(currentNode))) {
-                            return false;
-                        }
+                else if (currentNode.nodeName === "Product") {
+                    var productNodes = currentNode.childNodes;
+                    var attributes_1 = saft_attributes_list_1.SaftAttributeList.ProductAttributes;
+                    var result = saft_validation_1.SaftValidation.verifyAttributesInTheNodes({ attributes: attributes_1, nodeList: productNodes });
+                    if (!result.success) {
+                        return result;
                     }
-                    return true;
+                }
+                else if (currentNode.nodeName === "TaxTable") {
+                    var taxNodes = currentNode.childNodes;
+                    var taxResult = tax_table_1.TaxTableValidation.isTaxTableValid({ nodeList: taxNodes });
+                    if (!(taxResult.success)) {
+                        return taxResult;
+                    }
                 }
             }
         }
-        return false;
-    };
-    MasterFiles.prototype.isAddressValid = function (childNode) {
-        if (!(new saft_validation_1.SaftValidation().childNodeChildrenMatch({ childNode: childNode, matchList: saft_attributes_list_1.SaftAttributeList.BillingAndShipToAddressAttributes }))) {
-            return false;
-        }
-        return true;
-    };
-    MasterFiles.prototype.isTaxTableValid = function (_a) {
-        var childNode = _a.childNode;
-        for (var x = 0; x < childNode.childNodes.length; x++) {
-            var attribute = childNode.childNodes[x];
-            if (attribute.nodeName !== "#text") {
-                var taxEntryList = saft_attributes_list_1.SaftAttributeList.TaxTableEntryAttributes;
-                if (!(new saft_validation_1.SaftValidation().childNodeChildrenMatch({ childNode: attribute, matchList: taxEntryList }))) {
-                    return false;
-                }
-            }
-        }
-        return true;
+        return new iresult_1.DataResult({ success: true, message: "Ficheiro v\u00E1lido" });
     };
     return MasterFiles;
 }());

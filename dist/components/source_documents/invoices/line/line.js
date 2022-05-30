@@ -1,43 +1,41 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.LineValidation = void 0;
+var iresult_1 = require("../../../commons/iresult");
 var saft_attributes_list_1 = require("../../../commons/saft_attributes_list");
-var tax_exemptions_1 = require("../tax_exemptions");
-var tax_1 = require("./tax");
+var saft_validation_1 = require("../../../commons/saft_validation");
 var LineValidation = /** @class */ (function () {
     function LineValidation() {
     }
     LineValidation.isLineValid = function (_a) {
-        var attributeList = _a.attributeList, lineNodes = _a.lineNodes;
-        for (var attributeIndex = 0; attributeIndex < attributeList.length; attributeIndex++) {
-            var attribute = attributeList[attributeIndex];
-            if (!(this.lineChildrenValid({ element: attribute, lineNodes: lineNodes }))) {
-                return false;
-            }
+        var lineNodes = _a.lineNodes, invoiceType = _a.invoiceType;
+        var lineAttributeList = invoiceType.getName() == "NC" ?
+            saft_attributes_list_1.SaftAttributeList.NCLineAttributes : saft_attributes_list_1.SaftAttributeList.FTLineAttributes;
+        // CHECK ALL ATTRIBUTES
+        var lineResult = saft_validation_1.SaftValidation.verifyAttributesInTheNodes({ nodeList: lineNodes, attributes: lineAttributeList });
+        if (!lineResult.success) {
+            return lineResult;
         }
-        return true;
-    };
-    LineValidation.lineChildrenValid = function (_a) {
-        var element = _a.element, lineNodes = _a.lineNodes;
-        // THEY ARE OPTIONAL ATTRIBUTES
-        if (element.getName() === "TaxExemptionReason" || element.getName() === "TaxExemptionCode") {
-            return tax_exemptions_1.TaxExemption.validateExemptions(lineNodes);
-        }
-        for (var nodeIndex = 0; nodeIndex < lineNodes.length; nodeIndex++) {
-            if (lineNodes[nodeIndex].nodeName === element.getName()) {
-                var currentNode = lineNodes[nodeIndex];
-                if (currentNode.nodeName === "Tax") {
-                    var taxNodes = currentNode.childNodes;
+        for (var _i = 0, _b = Object.keys(lineNodes); _i < _b.length; _i++) {
+            var nodeKey = _b[_i];
+            var currentNode = lineNodes[nodeKey];
+            if (currentNode.nodeName === "Tax") {
+                var taxNodes = currentNode.childNodes;
+                if (!(taxNodes.length - 1 <= 0)) {
                     var taxAttributes = saft_attributes_list_1.SaftAttributeList.LineTaxAttributes;
-                    if (!(tax_1.TaxValidation.isTaxValid({ taxAttributeList: taxAttributes, taxNodes: taxNodes }))) {
-                        return false;
+                    var taxResult = saft_validation_1.SaftValidation.verifyAttributesInTheNodes({
+                        nodeList: taxNodes, attributes: taxAttributes
+                    });
+                    if (!(taxResult.success)) {
+                        return taxResult;
                     }
                 }
-                return true;
+                else {
+                    return new iresult_1.DataResult({ message: "Elemento [".concat(currentNode.nodeName, "] n\u00E3o v\u00E1lido!"), success: false });
+                }
             }
         }
-        console.log(element.getName());
-        return false;
+        return new iresult_1.DataResult({ message: "Elemento válido", success: true });
     };
     return LineValidation;
 }());

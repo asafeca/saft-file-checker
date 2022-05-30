@@ -1,196 +1,106 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.InvoiceValidation = void 0;
+var HeaderAttributeModel_1 = require("../../../domain/models/HeaderAttributeModel");
+var iresult_1 = require("../../commons/iresult");
 var saft_attributes_list_1 = require("../../commons/saft_attributes_list");
+var saft_validation_1 = require("../../commons/saft_validation");
 var document_totals_1 = require("./document_totals/document_totals");
 var line_1 = require("./line/line");
-var ship_to_and_from_1 = require("./ship_to_and_from");
-var tax_exemptions_1 = require("./tax_exemptions");
 var InvoiceValidation = /** @class */ (function () {
     function InvoiceValidation() {
     }
     InvoiceValidation.isInvoiceValid = function (_a) {
-        var nodeList = _a.nodeList;
-        var invoiceAttributes = saft_attributes_list_1.SaftAttributeList.InvoiceAttributes;
-        for (var attrIndex = 0; attrIndex < invoiceAttributes.length; attrIndex++) {
-            var attribute = invoiceAttributes[attrIndex];
-            // FIRST FIND THE ATTRIBUTE IN THE NODES
-            if (!(this.isAttributeInTheNode({ elementMatch: attribute, invoiceNodes: nodeList }))) {
-                console.log(attribute);
-                return false;
+        var invoiceNodeList = _a.invoiceNodeList;
+        if (!(invoiceNodeList.length - 1 <= 0)) {
+            // CHECK INVOICE NODES
+            var invoiceAttributes = saft_attributes_list_1.SaftAttributeList.InvoiceAttributes;
+            var invoiceResult = saft_validation_1.SaftValidation.verifyAttributesInTheNodes({ attributes: invoiceAttributes, nodeList: invoiceNodeList });
+            if (!(invoiceResult.success)) {
+                return invoiceResult;
             }
-            // CHECK IF THE ATTRIBUTES EXIST
-            if (!(this.invoiceChildMatch({ elementMatch: attribute, invoiceNodes: nodeList }))) {
-                return false;
-            }
-        }
-        return true;
-    };
-    InvoiceValidation.isAttributeInTheNode = function (_a) {
-        var elementMatch = _a.elementMatch, invoiceNodes = _a.invoiceNodes;
-        for (var nodeIndex = 0; nodeIndex < invoiceNodes.length; nodeIndex++) {
-            var nodeElement = invoiceNodes[nodeIndex];
-            if (nodeElement.nodeName == elementMatch.getName()) {
-                return true;
-            }
-        }
-        return false;
-    };
-    InvoiceValidation.invoiceChildMatch = function (_a) {
-        var elementMatch = _a.elementMatch, invoiceNodes = _a.invoiceNodes;
-        for (var invoiceIndex = 0; invoiceIndex < invoiceNodes.length; invoiceIndex++) {
-            var currentInvoiceNode = invoiceNodes[invoiceIndex];
-            if (currentInvoiceNode.nodeName === elementMatch.getName()) {
-                if (currentInvoiceNode.nodeName === "DocumentStatus") {
-                    var statusAttributes = saft_attributes_list_1.SaftAttributeList.DocumentStatusAttributes;
-                    var docStatusNodes = currentInvoiceNode.childNodes;
-                    if (!(docStatusNodes.length - 1 <= 0)) {
-                        if (!(this.matchAttributeListWithNodeList({ attributeList: statusAttributes, nodeList: docStatusNodes }))) {
-                            return false;
+            for (var _i = 0, _b = Object.keys(invoiceNodeList); _i < _b.length; _i++) {
+                var nodeKey = _b[_i];
+                var currentNode = invoiceNodeList[nodeKey];
+                if (currentNode.nodeName !== "#text" && currentNode.nodeName !== undefined) {
+                    if (currentNode.nodeName === "DocumentStatus" || currentNode.nodeName === "SpecialRegimes") {
+                        var nodeList = currentNode.childNodes;
+                        var attributes = this.getCorrectAttributeList(currentNode.nodeName);
+                        var nodeResult = saft_validation_1.SaftValidation.verifyAttributesInTheNodes({ attributes: attributes, nodeList: nodeList });
+                        if (!nodeResult.success) {
+                            return nodeResult;
                         }
                     }
-                    else {
-                        return false;
-                    }
-                }
-                else if (currentInvoiceNode.nodeName === "SpecialRegimes") {
-                    var regimeNodes = currentInvoiceNode.childNodes;
-                    var regimesAttributes = saft_attributes_list_1.SaftAttributeList.SpecialRegimesAttributes;
-                    if (!(regimeNodes.length - 1 <= 0)) {
-                        if (!(this.matchAttributeListWithNodeList({ attributeList: regimesAttributes, nodeList: regimeNodes }))) {
-                            console.log("regimes invalid");
-                            return false;
+                    else if (currentNode.nodeName === "ShipTo" || currentNode.nodeName === "ShipFrom") {
+                        var shipNodes = currentNode.childNodes;
+                        var shipAttributes = saft_attributes_list_1.SaftAttributeList.ShipToAndShiFromAttributes;
+                        var shipResult = saft_validation_1.SaftValidation.verifyAttributesInTheNodes({ nodeList: shipNodes, attributes: shipAttributes });
+                        if (!shipResult.success) {
+                            return shipResult;
                         }
-                    }
-                    else {
-                        return false;
-                    }
-                }
-                if (currentInvoiceNode.nodeName === "ShipTo" || currentInvoiceNode.nodeName === "ShipFrom") {
-                    // FIRST VALIDATE ALL NODES
-                    var shipTo_FromNodes = currentInvoiceNode.childNodes;
-                    var shipTo_FromAttributes = saft_attributes_list_1.SaftAttributeList.ShipToAndShiFromAttributes;
-                    if (!(shipTo_FromNodes.length - 1 <= 0)) {
-                        if (!(ship_to_and_from_1.ShipToAndFromValidation.shipToAndFromValid({ attributeList: shipTo_FromAttributes, nodeList: shipTo_FromNodes }))) {
-                            return false;
-                        }
-                    }
-                    else {
-                        return false;
-                    }
-                }
-                if (currentInvoiceNode.nodeName === "Line") {
-                    var lineNodes = currentInvoiceNode.childNodes;
-                    var lineAttributes = saft_attributes_list_1.SaftAttributeList.LineAttributes;
-                    if (!(lineNodes.length - 1 <= 0)) {
-                        if (!(line_1.LineValidation.isLineValid({ attributeList: lineAttributes, lineNodes: lineNodes }))) {
-                            return false;
-                        }
-                    }
-                    else {
-                        return false;
-                    }
-                }
-                if (currentInvoiceNode.nodeName === "DocumentTotals") {
-                    var totalsNodes = currentInvoiceNode.childNodes;
-                    var totalsAttributes = saft_attributes_list_1.SaftAttributeList.DocumentTotalsAttributes;
-                    if (!(totalsNodes.length - 1 <= 0)) {
-                        if (!(document_totals_1.DocumentTotalsValidation.isDocumentTotalsValid({ totalsAttributes: totalsAttributes, totalsNodes: totalsNodes }))) {
-                            return false;
-                        }
-                    }
-                    else {
-                        return false;
-                    }
-                }
-            }
-        }
-        return true;
-    };
-    InvoiceValidation.checkInvoiceChidrenAndSiblings = function (_a) {
-        var nodeList = _a.nodeList, attributeList = _a.attributeList;
-        for (var attrIndex = 0; attrIndex < attributeList.length; attrIndex++) {
-            var attribute = attributeList[attrIndex];
-            /// CHECKING EXEMPTIONS
-            if (attribute.getName() === "TaxExemptionReason"
-                || attribute.getName() === "TaxExemptionCode") {
-                if (!(tax_exemptions_1.TaxExemption.validateExemptions(nodeList))) {
-                    return false;
-                }
-            }
-            if (!(this.findAttributeOnNode({ element: attribute, nodeList: nodeList }))) {
-                return false;
-            }
-        }
-        return true;
-    };
-    InvoiceValidation.findAttributeOnNode = function (_a) {
-        var element = _a.element, nodeList = _a.nodeList;
-        if (element.getName() !== "TaxExemptionReason" && element.getName() !== "TaxExemptionCode") {
-            for (var nodeIndex = 0; nodeIndex < nodeList.length; nodeIndex++) {
-                if (element.getName() === nodeList[nodeIndex].nodeName) {
-                    if (nodeList[nodeIndex].nodeName === "Address") {
-                        var addressAttributes = saft_attributes_list_1.SaftAttributeList.ShipToAndShipFromAddressAttributes;
-                        var addressNodes = nodeList[nodeIndex].childNodes;
-                        if (!(addressNodes.length - 1 <= 0)) {
-                            if (!(this.checkInvoiceChidrenAndSiblings({ nodeList: addressNodes, attributeList: addressAttributes }))) {
-                                return false;
+                        for (var _c = 0, _d = Object.keys(shipNodes); _c < _d.length; _c++) {
+                            var shipKey = _d[_c];
+                            var currentShipNode = shipNodes[shipKey];
+                            if (currentShipNode.nodeName === "Address") {
+                                var shipAddressNodes = currentShipNode.childNodes;
+                                var shipAddressAttributes = saft_attributes_list_1.SaftAttributeList.ShipToAndShipFromAddressAttributes;
+                                if (!(shipAddressNodes.length - 1 <= 0)) {
+                                    var shipAddressResult = saft_validation_1.SaftValidation.verifyAttributesInTheNodes({
+                                        nodeList: shipAddressNodes, attributes: shipAddressAttributes
+                                    });
+                                    if (!shipAddressResult.success) {
+                                        return shipAddressResult;
+                                    }
+                                }
+                                else {
+                                    return new iresult_1.DataResult({ success: false, message: "Elemento ".concat(currentShipNode.nodeName, " inv\u00E1lido") });
+                                }
                             }
                         }
-                        else {
-                            return false;
+                    }
+                    else if (currentNode.nodeName === "Line") {
+                        var lineNodes = currentNode.childNodes;
+                        var invoiceType = this.getInvoiceType({ invoiceNodeList: invoiceNodeList });
+                        var invoiceResult_1 = line_1.LineValidation.isLineValid({ lineNodes: lineNodes, invoiceType: invoiceType });
+                        if (!invoiceResult_1.success) {
+                            return invoiceResult_1;
                         }
                     }
-                    else if (nodeList[nodeIndex].nodeName === "Tax") {
-                        var taxNodes = nodeList[nodeIndex].childNodes;
-                        var taxAttributes = saft_attributes_list_1.SaftAttributeList.LineTaxAttributes;
-                        if (!(taxNodes.length - 1 <= 0)) {
-                            if (!(this.checkInvoiceChidrenAndSiblings({ nodeList: taxNodes, attributeList: taxAttributes }))) {
-                                return false;
-                            }
-                        }
-                        else {
-                            return false;
+                    else if (currentNode.nodeName === "DocumentTotals") {
+                        var totalsNodes = currentNode.childNodes;
+                        var totalsResult = document_totals_1.DocumentTotalsValidation.isDocumentTotalsValid({ totalsNodes: totalsNodes });
+                        if (!totalsResult.success) {
+                            return totalsResult;
                         }
                     }
-                    else if (nodeList[nodeIndex].nodeName === "Currency") {
-                        var currencyNodes = nodeList[nodeIndex].childNodes;
-                        var currencyAttributes = saft_attributes_list_1.SaftAttributeList.CurrencyAttributes;
-                        if (!(currencyNodes.length - 1 <= 0)) {
-                            if (!(this.checkInvoiceChidrenAndSiblings({ nodeList: currencyNodes, attributeList: currencyAttributes }))) {
-                                return false;
-                            }
-                        }
-                        else {
-                            return false;
-                        }
-                    }
-                    return true;
                 }
             }
-            console.log(element);
-            return false;
+            return new iresult_1.DataResult({ message: "Elemento válido", success: true });
         }
-        return true;
+        else {
+            return new iresult_1.DataResult({ message: "Elemento [Invoice] inv\u00E1lido", success: false });
+        }
     };
-    InvoiceValidation.matchAttributeListWithNodeList = function (_a) {
-        var attributeList = _a.attributeList, nodeList = _a.nodeList;
-        for (var attributeIndex = 0; attributeIndex < attributeList.length; attributeIndex++) {
-            var element = attributeList[attributeIndex];
-            if (!(this.isElementFoundInTheNode({ element: element, nodeList: nodeList }))) {
-                return false;
+    InvoiceValidation.getCorrectAttributeList = function (attribute) {
+        switch (attribute) {
+            case "DocumentStatus":
+                return saft_attributes_list_1.SaftAttributeList.DocumentStatusAttributes;
+            case "SpecialRegimes":
+                return saft_attributes_list_1.SaftAttributeList.SpecialRegimesAttributes;
+            default: return new Array();
+        }
+    };
+    InvoiceValidation.getInvoiceType = function (_a) {
+        var invoiceNodeList = _a.invoiceNodeList;
+        for (var _i = 0, _b = Object.keys(invoiceNodeList); _i < _b.length; _i++) {
+            var nodeKey = _b[_i];
+            var currentInvoice = invoiceNodeList[nodeKey];
+            if (currentInvoice.nodeName === "InvoiceType") {
+                var name_1 = currentInvoice.textContent !== null ? currentInvoice.textContent : "UNKNOWN";
+                return new HeaderAttributeModel_1.SaftAttributeModel({ name: name_1, isParent: false, type: "string" });
             }
         }
-        return true;
-    };
-    InvoiceValidation.isElementFoundInTheNode = function (_a) {
-        var element = _a.element, nodeList = _a.nodeList;
-        for (var index = 0; index < nodeList.length; index++) {
-            if (nodeList[index].nodeName === element.getName()) {
-                return true;
-            }
-        }
-        return false;
+        return new HeaderAttributeModel_1.SaftAttributeModel({ name: "UNKNOWN", isParent: false, type: "string" });
     };
     return InvoiceValidation;
 }());

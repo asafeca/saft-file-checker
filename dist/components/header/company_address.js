@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.SaftCompanyAddress = void 0;
+var iresult_1 = require("../commons/iresult");
 var saft_validation_1 = require("../commons/saft_validation");
 var SaftCompanyAddress = /** @class */ (function () {
     function SaftCompanyAddress(address) {
@@ -9,15 +10,22 @@ var SaftCompanyAddress = /** @class */ (function () {
     SaftCompanyAddress.prototype.isCompanyAddressValid = function () {
         if (this.address !== null && this.address !== undefined) {
             for (var x = 0; x < this.address.childNodes.length; x++) {
-                if (this.address.childNodes[x].nodeName !== "#text") {
+                var currentNode = this.address.childNodes[x];
+                if (currentNode.nodeName !== "#text") {
                     if (!(saft_validation_1.SaftValidation.isString(this.address.childNodes[x].textContent))) {
-                        return false;
+                        return new iresult_1.DataResult({
+                            message: "Ficheiro inv\u00E1lido [".concat(currentNode.nodeName, "] n\u00E3o encontrado"),
+                            success: false
+                        });
                     }
                 }
             }
-            return true;
+            return new iresult_1.DataResult({ message: "Ficheiro valido", success: true });
         }
-        return false;
+        return new iresult_1.DataResult({
+            message: "Ficheiro inv\u00E1lido [Address] n\u00E3o \u00E9 v\u00E1lido",
+            success: false
+        });
     };
     return SaftCompanyAddress;
 }());

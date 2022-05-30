@@ -1,9 +1,4 @@
-import { SaftAttributeModel } from "../../../../domain/models/HeaderAttributeModel";
+import { IDataResult } from "../../../commons/iresult";
 export declare class CurrencyValidation {
-    static isCurrencyValidation({ attributeList, currencyNodes }: {
-        attributeList: Array<SaftAttributeModel>;
-        currencyNodes: NodeListOf<ChildNode>;
-    }): boolean;
-    private static isAttributeFoundInNode;
-    private static isCurrencyInTheNode;
+    static isCurrencyValid(totalsNodes: NodeListOf<ChildNode>): IDataResult;
 }
