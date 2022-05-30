@@ -1,1 +1,1 @@
-export declare function parseFile(): void;
+export {};
