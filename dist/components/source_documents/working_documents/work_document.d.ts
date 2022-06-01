@@ -1,5 +1,5 @@
-import { IDataResult } from "../../commons/iresult";
+import { IDataResult } from '../../commons/iresult';
 export declare class WorkDocumentValidation {
-    static isWorkDocumentValid(workDocNodeList: NodeListOf<ChildNode>): IDataResult;
-    private static findAttributeInTheNode;
+  static isWorkDocumentValid(workDocNodeList: NodeListOf<ChildNode>): IDataResult;
+  private static findAttributeInTheNode;
 }

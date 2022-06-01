@@ -1,7 +1,7 @@
-import { SaftAttributeModel } from "../../domain/models/HeaderAttributeModel";
+import { SaftAttributeModel } from '../../domain/models/HeaderAttributeModel';
 
-export interface SaftNamedParameters{
-    name:string;
-    type:string,
-    isParent:boolean
+export interface SaftNamedParameters {
+  name: string;
+  type: string;
+  isParent: boolean;
 }

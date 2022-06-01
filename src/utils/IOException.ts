@@ -1,1 +1,1 @@
-export class IOException extends Error{}
+export class IOException extends Error {}

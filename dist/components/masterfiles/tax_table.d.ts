@@ -1,6 +1,4 @@
-import { IDataResult } from "../commons/iresult";
+import { IDataResult } from '../commons/iresult';
 export declare class TaxTableValidation {
-    static isTaxTableValid({ nodeList }: {
-        nodeList: NodeListOf<ChildNode>;
-    }): IDataResult;
+  static isTaxTableValid({ nodeList }: { nodeList: NodeListOf<ChildNode> }): IDataResult;
 }

@@ -1,4 +1,4 @@
-import { IDataResult } from "../commons/iresult";
+import { IDataResult } from '../commons/iresult';
 /**
  * @param header: THIS IS NODE CHUNCK TO BE ANALYZED
  * @author: Adelino Safeca
@@ -6,5 +6,5 @@ import { IDataResult } from "../commons/iresult";
  * @date 2022/05/16
  */
 export declare class SaftHeader {
-    static isHeaderValid(nodeList: NodeListOf<ChildNode>): IDataResult;
+  static isHeaderValid(nodeList: NodeListOf<ChildNode>): IDataResult;
 }

@@ -1,16 +1,12 @@
-import { SaftFileParser } from "./domain/SaftFileParser";
-import { SaftFileParserImpl } from "./domain/SaftFileParserImpl";
-import {IDataResult } from "./components/commons/iresult";
+import { SaftFileParser } from './domain/SaftFileParser';
+import { SaftFileParserImpl } from './domain/SaftFileParserImpl';
+import { IDataResult } from './components/commons/iresult';
 
- export function parseFile(content: Uint8Array):IDataResult {
-
-  //let content = fs.readFileSync("test.xml");
+export function parseFile(content: Uint8Array): IDataResult {
   const dataView = new Uint8Array(content);
-  let parser: SaftFileParser = new SaftFileParserImpl();
+  const parser: SaftFileParser = new SaftFileParserImpl();
 
-  return  parser.parse(dataView)
-
-
+  return parser.parse(dataView);
 }
 
-module.exports = parseFile
+module.exports = parseFile;

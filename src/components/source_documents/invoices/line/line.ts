@@ -1,57 +1,49 @@
-import { SaftAttributeModel } from "../../../../domain/models/HeaderAttributeModel"
-import { DataResult, IDataResult } from "../../../commons/iresult"
-import { SaftAttributeList } from "../../../commons/saft_attributes_list"
-import { SaftValidation } from "../../../commons/saft_validation"
+import { SaftAttributeModel } from '../../../../domain/models/HeaderAttributeModel';
+import { DataResult, IDataResult } from '../../../commons/iresult';
+import { SaftAttributeList } from '../../../commons/saft_attributes_list';
+import { SaftValidation } from '../../../commons/saft_validation';
 
-export class LineValidation{
+export class LineValidation {
+  static isLineValid({
+    lineNodes,
+    invoiceType,
+  }: {
+    lineNodes: NodeListOf<ChildNode>;
+    invoiceType: SaftAttributeModel;
+  }): IDataResult {
+    const lineAttributeList =
+      invoiceType.getName() === 'NC' ? SaftAttributeList.NCLineAttributes : SaftAttributeList.FTLineAttributes;
 
-    static isLineValid({lineNodes,invoiceType }:
-        {lineNodes:NodeListOf<ChildNode>, 
-            invoiceType: SaftAttributeModel}):IDataResult{
+    // CHECK ALL ATTRIBUTES
+    const lineResult = SaftValidation.verifyAttributesInTheNodes({
+      nodeList: lineNodes,
+      attributes: lineAttributeList,
+    });
 
-                const lineAttributeList = invoiceType.getName() =="NC"? 
-                SaftAttributeList.NCLineAttributes: SaftAttributeList.FTLineAttributes
+    if (!lineResult.success) {
+      return lineResult;
+    }
 
-                // CHECK ALL ATTRIBUTES
-                const lineResult =SaftValidation.verifyAttributesInTheNodes({nodeList:
-                    lineNodes,attributes: lineAttributeList})
+    for (const nodeKey of Object.keys(lineNodes)) {
+      const currentNode = lineNodes[nodeKey as any];
+      if (currentNode.nodeName === 'Tax') {
+        const taxNodes = currentNode.childNodes;
+        if (!(taxNodes.length - 1 <= 0)) {
+          const taxAttributes = SaftAttributeList.LineTaxAttributes;
+          const taxResult = SaftValidation.verifyAttributesInTheNodes({
+            nodeList: taxNodes,
+            attributes: taxAttributes,
+          });
 
-                if(!lineResult.success){
-                    return lineResult
-                }
-
-
-                for(let nodeKey of Object.keys(lineNodes)){
-                    const currentNode = lineNodes[nodeKey as any]
-                    if(currentNode.nodeName === "Tax"){
-                        const taxNodes = currentNode.childNodes
-                        if(!(taxNodes.length-1 <=0)){
-
-                            const taxAttributes = SaftAttributeList.LineTaxAttributes
-                        const taxResult = SaftValidation.verifyAttributesInTheNodes({
-                            nodeList: taxNodes, attributes: taxAttributes
-                        })
-
-                        if(!(taxResult.success)){
-                            return taxResult
-                        }
-
-                        }
-                        else{
-
-
-                            return new DataResult({message:`Elemento [${currentNode.nodeName}] não válido!`, success:false})
-
-                        }
-                        
-
-                    }
-                }
-
-
-                return new DataResult({message:"Elemento válido", success:true})
-        
-
+          if (!taxResult.success) {
+            return taxResult;
+          }
+        } else {
+          return new DataResult({ message: `Elemento [${currentNode.nodeName}] não válido!`, success: false });
         }
+      }
+    }
 
+    return new DataResult({ message: 'Elemento válido', success: true });
+  }
 }

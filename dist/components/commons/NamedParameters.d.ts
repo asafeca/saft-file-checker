@@ -1,5 +1,5 @@
 export interface SaftNamedParameters {
-    name: string;
-    type: string;
-    isParent: boolean;
+  name: string;
+  type: string;
+  isParent: boolean;
 }
