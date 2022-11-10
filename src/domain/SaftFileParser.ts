@@ -1,7 +1,7 @@
-import { IDataResult } from '../components/commons/iresult';
 import { IOException } from '../utils/IOException';
+import { DetalheErro } from './models/detalheErro';
 
 export interface SaftFileParser {
-  parse(params: Uint8Array): IDataResult;
+  parse(params: Uint8Array, reportType: Number): Array<DetalheErro>;
   systemInformation(): NodeJS.Platform;
 }

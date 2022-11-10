@@ -6,5 +6,5 @@ import { IDataResult } from '../commons/iresult';
  * @date 2022/05/16
  */
 export declare class SaftHeader {
-  static isHeaderValid(nodeList: NodeListOf<ChildNode>): IDataResult;
+    static isHeaderValid(nodeList: NodeListOf<ChildNode>): IDataResult;
 }

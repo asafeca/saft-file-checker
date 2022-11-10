@@ -1,0 +1,7592 @@
+[
+  {
+    "ID": 178,
+    "DESIGNACAO": "strNifFuncionario",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "200",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1302,
+    "TIPO_REPORTE_ID": 10
+  },
+  {
+    "ID": 179,
+    "DESIGNACAO": "strNomeFuncionario",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "300",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1302,
+    "TIPO_REPORTE_ID": 10
+  },
+  {
+    "ID": 180,
+    "DESIGNACAO": "strNumSS",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "50",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1302,
+    "TIPO_REPORTE_ID": 10
+  },
+  {
+    "ID": 181,
+    "DESIGNACAO": "strProvincia",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "20",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1302,
+    "TIPO_REPORTE_ID": 10
+  },
+  {
+    "ID": 182,
+    "DESIGNACAO": "strMunicipio",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "20",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1302,
+    "TIPO_REPORTE_ID": 10
+  },
+  {
+    "ID": 183,
+    "DESIGNACAO": "decSalarioBase",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "15,2",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 1302,
+    "TIPO_REPORTE_ID": 10
+  },
+  {
+    "ID": 1661,
+    "DESIGNACAO": "WithholdingTaxAmount",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 1633,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 185,
+    "DESIGNACAO": "decSubsidiosSujeitosIRT",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "15,2",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 1302,
+    "TIPO_REPORTE_ID": 10
+  },
+  {
+    "ID": 204,
+    "DESIGNACAO": "decSalarioIliquido",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "15,2",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 1302,
+    "TIPO_REPORTE_ID": 10
+  },
+  {
+    "ID": 1662,
+    "DESIGNACAO": "PurchaseInvoices",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "N/A",
+    "ESTRUTURA_CAMPO_ID": 272,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1663,
+    "DESIGNACAO": "NumberOfEntries",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "Integer",
+    "ESTRUTURA_CAMPO_ID": 1662,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1664,
+    "DESIGNACAO": "Invoice",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "N/A",
+    "ESTRUTURA_CAMPO_ID": 1662,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1665,
+    "DESIGNACAO": "InvoiceNo",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "60",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1664,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1666,
+    "DESIGNACAO": "References",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "N/A",
+    "ESTRUTURA_CAMPO_ID": 1664,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 192,
+    "DESIGNACAO": "decSubsidiosNaoSujeitosIRT",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "15,2",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 1302,
+    "TIPO_REPORTE_ID": 10
+  },
+  {
+    "ID": 1667,
+    "DESIGNACAO": "Hash",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "172",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1664,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 110,
+    "DESIGNACAO": "contribuinte",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "200",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 8
+  },
+  {
+    "ID": 111,
+    "DESIGNACAO": "nif",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "200",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 8
+  },
+  {
+    "ID": 112,
+    "DESIGNACAO": "sector",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "300",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 8
+  },
+  {
+    "ID": 113,
+    "DESIGNACAO": "subSector1",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "300",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 8
+  },
+  {
+    "ID": 114,
+    "DESIGNACAO": "subSector2",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "300",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 8
+  },
+  {
+    "ID": 115,
+    "DESIGNACAO": "tecnicoGestor",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "100",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 8
+  },
+  {
+    "ID": 116,
+    "DESIGNACAO": "estado",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "100",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 8
+  },
+  {
+    "ID": 117,
+    "DESIGNACAO": "dataEntrega",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "10",
+    "TIPO_DADO": "LocalDate",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 8
+  },
+  {
+    "ID": 118,
+    "DESIGNACAO": "dataNotificacao",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "10",
+    "TIPO_DADO": "LocalDate",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 8
+  },
+  {
+    "ID": 119,
+    "DESIGNACAO": "dataRecepcaoNotificacao",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "10",
+    "TIPO_DADO": "LocalDate",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 8
+  },
+  {
+    "ID": 120,
+    "DESIGNACAO": "dataRecepcaoNotificacao",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "10",
+    "TIPO_DADO": "LocalDate",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 8
+  },
+  {
+    "ID": 121,
+    "DESIGNACAO": "numDec",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "100",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 8
+  },
+  {
+    "ID": 122,
+    "DESIGNACAO": "refDec",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "100",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 8
+  },
+  {
+    "ID": 123,
+    "DESIGNACAO": "aux",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "100",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 8
+  },
+  {
+    "ID": 124,
+    "DESIGNACAO": "montanteSujeitoImposto15Titular",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "10",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 8
+  },
+  {
+    "ID": 125,
+    "DESIGNACAO": "montanteSujeitoImposto10Titular",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "10",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 8
+  },
+  {
+    "ID": 126,
+    "DESIGNACAO": "montanteSujeitoImposto5Titular",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "10",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 8
+  },
+  {
+    "ID": 127,
+    "DESIGNACAO": "totalMontanteSujeitoTitular",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "10",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 8
+  },
+  {
+    "ID": 128,
+    "DESIGNACAO": "impostoPagar15Titular",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "10",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 8
+  },
+  {
+    "ID": 129,
+    "DESIGNACAO": "impostoPagar10Titular",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "10",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 8
+  },
+  {
+    "ID": 130,
+    "DESIGNACAO": "impostoPagar5Titular",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "10",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 8
+  },
+  {
+    "ID": 131,
+    "DESIGNACAO": "totalImpostoPagarTitular",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "10",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 8
+  },
+  {
+    "ID": 132,
+    "DESIGNACAO": "montanteSujeitoImposto15Devedor",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "10",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 8
+  },
+  {
+    "ID": 133,
+    "DESIGNACAO": "montanteSujeitoImposto10Devedor",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "10",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 8
+  },
+  {
+    "ID": 134,
+    "DESIGNACAO": "montanteSujeitoImposto5Devedor",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "10",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 8
+  },
+  {
+    "ID": 135,
+    "DESIGNACAO": "totalMontanteSujeitoDevedor",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "10",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 8
+  },
+  {
+    "ID": 136,
+    "DESIGNACAO": "impostoPagar15Devedor",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "10",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 8
+  },
+  {
+    "ID": 137,
+    "DESIGNACAO": "impostoPagar10Devedor",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "10",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 8
+  },
+  {
+    "ID": 138,
+    "DESIGNACAO": "impostoPagar5Devedor",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "10",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 8
+  },
+  {
+    "ID": 139,
+    "DESIGNACAO": "totalImpostoPagarDevedor",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "10",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 8
+  },
+  {
+    "ID": 140,
+    "DESIGNACAO": "declarado",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "10",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 8
+  },
+  {
+    "ID": 141,
+    "DESIGNACAO": "pago",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "10",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 8
+  },
+  {
+    "ID": 142,
+    "DESIGNACAO": "observacoes",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "400",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 8
+  },
+  {
+    "ID": 1668,
+    "DESIGNACAO": "SourceID",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "60",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1664,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1669,
+    "DESIGNACAO": "Period",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "Integer",
+    "ESTRUTURA_CAMPO_ID": 1664,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1670,
+    "DESIGNACAO": "InvoiceDate",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "LocalDate",
+    "ESTRUTURA_CAMPO_ID": 1664,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1671,
+    "DESIGNACAO": "PurchaseType",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "3",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1664,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1672,
+    "DESIGNACAO": "PurchaseType",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "2",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1664,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1673,
+    "DESIGNACAO": "SupplierID",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "30",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1664,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1674,
+    "DESIGNACAO": "DocumentTotals",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "N/A",
+    "ESTRUTURA_CAMPO_ID": 1664,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1675,
+    "DESIGNACAO": "WithholdingTax",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "N/A",
+    "ESTRUTURA_CAMPO_ID": 1664,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1676,
+    "DESIGNACAO": "Reference",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "60",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1666,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1677,
+    "DESIGNACAO": "InvoiceDate",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "LocalDate",
+    "ESTRUTURA_CAMPO_ID": 1666,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1678,
+    "DESIGNACAO": "TaxPayable",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 1674,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1679,
+    "DESIGNACAO": "NetTotal",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 1674,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 206,
+    "DESIGNACAO": "decBaseTributavelSS",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "15,2",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 1302,
+    "TIPO_REPORTE_ID": 10
+  },
+  {
+    "ID": 207,
+    "DESIGNACAO": "strIsentoSS",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "200",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1302,
+    "TIPO_REPORTE_ID": 10
+  },
+  {
+    "ID": 208,
+    "DESIGNACAO": "decContribuicaoSS",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "15,2",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 1302,
+    "TIPO_REPORTE_ID": 10
+  },
+  {
+    "ID": 209,
+    "DESIGNACAO": "decBaseTributavelIRT",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "15,2",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 1302,
+    "TIPO_REPORTE_ID": 10
+  },
+  {
+    "ID": 210,
+    "DESIGNACAO": "strIsentoIRT",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "200",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1302,
+    "TIPO_REPORTE_ID": 10
+  },
+  {
+    "ID": 211,
+    "DESIGNACAO": "decIRTApurado",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "15,2",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 1302,
+    "TIPO_REPORTE_ID": 10
+  },
+  {
+    "ID": 1680,
+    "DESIGNACAO": "GrossTotal",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 1674,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1681,
+    "DESIGNACAO": "Deductible",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "N/A",
+    "ESTRUTURA_CAMPO_ID": 1674,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1682,
+    "DESIGNACAO": "Currency",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "N/A",
+    "ESTRUTURA_CAMPO_ID": 1674,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1683,
+    "DESIGNACAO": "TaxBase",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 1681,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1684,
+    "DESIGNACAO": "DeductibleAmount",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 1681,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1685,
+    "DESIGNACAO": "DeductiblePercentage",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 1681,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1686,
+    "DESIGNACAO": "DeductibleTaxType",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "6",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1681,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1687,
+    "DESIGNACAO": "CurrencyCode",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "3",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1682,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1688,
+    "DESIGNACAO": "CurrencyAmount",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 1682,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1689,
+    "DESIGNACAO": "ExchangeRate",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 1682,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1690,
+    "DESIGNACAO": "WithholdingTaxType",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "3",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1675,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1691,
+    "DESIGNACAO": "WithholdingTaxDescription",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "60",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1675,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1693,
+    "DESIGNACAO": "WithholdingTaxAmount",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 1675,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1700,
+    "DESIGNACAO": "subsidiosNaoSujeitosIRT",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "Object",
+    "ESTRUTURA_CAMPO_ID": 1302,
+    "TIPO_REPORTE_ID": 10
+  },
+  {
+    "ID": 1701,
+    "DESIGNACAO": "subsidiosSujeitosIRT",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "Object",
+    "ESTRUTURA_CAMPO_ID": 1302,
+    "TIPO_REPORTE_ID": 10
+  },
+  {
+    "ID": 1702,
+    "DESIGNACAO": "decDescontoFaltas",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "15,2",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 1302,
+    "TIPO_REPORTE_ID": 10
+  },
+  {
+    "ID": 1703,
+    "DESIGNACAO": "strManualBaseTributavelSS",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "50",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1302,
+    "TIPO_REPORTE_ID": 10
+  },
+  {
+    "ID": 1704,
+    "DESIGNACAO": "decAlimentacao",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "15,2",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 1700,
+    "TIPO_REPORTE_ID": 10
+  },
+  {
+    "ID": 1705,
+    "DESIGNACAO": "decTransporte",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "15,2",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 1700,
+    "TIPO_REPORTE_ID": 10
+  },
+  {
+    "ID": 1706,
+    "DESIGNACAO": "decAbonoFamilia",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "15,2",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 1700,
+    "TIPO_REPORTE_ID": 10
+  },
+  {
+    "ID": 1707,
+    "DESIGNACAO": "decReembolsoDespesas",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "15,2",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 1700,
+    "TIPO_REPORTE_ID": 10
+  },
+  {
+    "ID": 1708,
+    "DESIGNACAO": "decOutros",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "15,2",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 1700,
+    "TIPO_REPORTE_ID": 10
+  },
+  {
+    "ID": 1709,
+    "DESIGNACAO": "decAbonoFalhas",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "15,2",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 1701,
+    "TIPO_REPORTE_ID": 10
+  },
+  {
+    "ID": 1710,
+    "DESIGNACAO": "decRendaCasa",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "15,2",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 1701,
+    "TIPO_REPORTE_ID": 10
+  },
+  {
+    "ID": 1711,
+    "DESIGNACAO": "decCompensacaoRescisao",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "15,2",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 1701,
+    "TIPO_REPORTE_ID": 10
+  },
+  {
+    "ID": 1712,
+    "DESIGNACAO": "decSubsidioFerias",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "15,2",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 1701,
+    "TIPO_REPORTE_ID": 10
+  },
+  {
+    "ID": 1713,
+    "DESIGNACAO": "decHorasExtras",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "15,2",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 1701,
+    "TIPO_REPORTE_ID": 10
+  },
+  {
+    "ID": 1714,
+    "DESIGNACAO": "decSubsidioAtavio",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "15,2",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 1701,
+    "TIPO_REPORTE_ID": 10
+  },
+  {
+    "ID": 1715,
+    "DESIGNACAO": "decSubsidioRepresentacao",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "15,2",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 1701,
+    "TIPO_REPORTE_ID": 10
+  },
+  {
+    "ID": 1716,
+    "DESIGNACAO": "decPremios",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "15,2",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 1701,
+    "TIPO_REPORTE_ID": 10
+  },
+  {
+    "ID": 1717,
+    "DESIGNACAO": "decSubsidioNatal",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "15,2",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 1701,
+    "TIPO_REPORTE_ID": 10
+  },
+  {
+    "ID": 1718,
+    "DESIGNACAO": "decOutrosSubsidiosSujeitos",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "15,2",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 1701,
+    "TIPO_REPORTE_ID": 10
+  },
+  {
+    "ID": 1719,
+    "DESIGNACAO": "decExcSubsNaoSujeitosIRT",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "15,2",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 1302,
+    "TIPO_REPORTE_ID": 10
+  },
+  {
+    "ID": 1720,
+    "DESIGNACAO": "TaxRegistrationNumber",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "15",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 12
+  },
+  {
+    "ID": 1721,
+    "DESIGNACAO": "LCompanyName",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "250",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 12
+  },
+  {
+    "ID": 1722,
+    "DESIGNACAO": "StartDate",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "LocalDate",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 12
+  },
+  {
+    "ID": 1723,
+    "DESIGNACAO": "EndDate",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "LocalDate",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 12
+  },
+  {
+    "ID": 1724,
+    "DESIGNACAO": "CustomerTaxID",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "15",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 12
+  },
+  {
+    "ID": 1725,
+    "DESIGNACAO": "CustomerName",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "250",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 12
+  },
+  {
+    "ID": 1726,
+    "DESIGNACAO": "TPANumber",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "200",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 12
+  },
+  {
+    "ID": 1727,
+    "DESIGNACAO": "GrossTotal",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "LocalDate",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 12
+  },
+  {
+    "ID": 1728,
+    "DESIGNACAO": "AuditFileVersion",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "10",
+    "TIPO_DADO": "LocalDate",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 12
+  },
+  {
+    "ID": 42,
+    "DESIGNACAO": "contribuinte",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "200",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 4
+  },
+  {
+    "ID": 43,
+    "DESIGNACAO": "nif",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "200",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 4
+  },
+  {
+    "ID": 44,
+    "DESIGNACAO": "sector",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "300",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 4
+  },
+  {
+    "ID": 45,
+    "DESIGNACAO": "subSector1",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "300",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 4
+  },
+  {
+    "ID": 46,
+    "DESIGNACAO": "subSector2",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "300",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 4
+  },
+  {
+    "ID": 47,
+    "DESIGNACAO": "tecnicoGestor",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "100",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 4
+  },
+  {
+    "ID": 48,
+    "DESIGNACAO": "obs",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "400",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 4
+  },
+  {
+    "ID": 49,
+    "DESIGNACAO": "dataEntregaDeclaracaoForaPrazo",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "10",
+    "TIPO_DADO": "LocalDate",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 4
+  },
+  {
+    "ID": 50,
+    "DESIGNACAO": "dataEntregaDeclaracaoDentroPrazo",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "10",
+    "TIPO_DADO": "LocalDate",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 4
+  },
+  {
+    "ID": 51,
+    "DESIGNACAO": "numDec",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "50",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 4
+  },
+  {
+    "ID": 52,
+    "DESIGNACAO": "numDec",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "50",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 4
+  },
+  {
+    "ID": 53,
+    "DESIGNACAO": "refDec",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "50",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 4
+  },
+  {
+    "ID": 54,
+    "DESIGNACAO": "valorTotalSujeito",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 4
+  },
+  {
+    "ID": 55,
+    "DESIGNACAO": "impostoLiquidado",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 4
+  },
+  {
+    "ID": 56,
+    "DESIGNACAO": "impostoSigt",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 4
+  },
+  {
+    "ID": 57,
+    "DESIGNACAO": "diferenca",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 4
+  },
+  {
+    "ID": 143,
+    "DESIGNACAO": "contribuinte",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "200",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 9
+  },
+  {
+    "ID": 144,
+    "DESIGNACAO": "nif",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "200",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 9
+  },
+  {
+    "ID": 145,
+    "DESIGNACAO": "sector",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "200",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 9
+  },
+  {
+    "ID": 146,
+    "DESIGNACAO": "subSector1",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "300",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 9
+  },
+  {
+    "ID": 147,
+    "DESIGNACAO": "subSector2",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "300",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 9
+  },
+  {
+    "ID": 148,
+    "DESIGNACAO": "tecnicoGestor",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "100",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 9
+  },
+  {
+    "ID": 149,
+    "DESIGNACAO": "observacaoLiquidacao",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "400",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 9
+  },
+  {
+    "ID": 150,
+    "DESIGNACAO": "estadoContribuinte",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "300",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 9
+  },
+  {
+    "ID": 151,
+    "DESIGNACAO": "estadoModelo2",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "50",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 9
+  },
+  {
+    "ID": 152,
+    "DESIGNACAO": "estadoAutoNoticia",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "50",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 9
+  },
+  {
+    "ID": 153,
+    "DESIGNACAO": "numeroTrabalhadores",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 9
+  },
+  {
+    "ID": 154,
+    "DESIGNACAO": "dataEnvioNotificacao",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "10",
+    "TIPO_DADO": "LocalDate",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 9
+  },
+  {
+    "ID": 155,
+    "DESIGNACAO": "dataRecepcaoNotificacaoAutoNoticia",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "10",
+    "TIPO_DADO": "LocalDate",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 9
+  },
+  {
+    "ID": 156,
+    "DESIGNACAO": "dataRespostaNotificacaoAutoNoticia",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "10",
+    "TIPO_DADO": "LocalDate",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 9
+  },
+  {
+    "ID": 157,
+    "DESIGNACAO": "dataEntrega",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "10",
+    "TIPO_DADO": "LocalDate",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 9
+  },
+  {
+    "ID": 158,
+    "DESIGNACAO": "dataLimiteRespostaAutoNoticia",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "10",
+    "TIPO_DADO": "LocalDate",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 9
+  },
+  {
+    "ID": 159,
+    "DESIGNACAO": "dataEnvioContenciosoLiquidacao",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "10",
+    "TIPO_DADO": "LocalDate",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 9
+  },
+  {
+    "ID": 160,
+    "DESIGNACAO": "valorNotificadoAutoNoticia",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 9
+  },
+  {
+    "ID": 161,
+    "DESIGNACAO": "impostoAdicionalCobradoAutoNoticia",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 9
+  },
+  {
+    "ID": 162,
+    "DESIGNACAO": "multaLiquidacao",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 9
+  },
+  {
+    "ID": 163,
+    "DESIGNACAO": "jurosLiquidacao",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 9
+  },
+  {
+    "ID": 164,
+    "DESIGNACAO": "valorDeclaradoAutoNoticia",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 9
+  },
+  {
+    "ID": 165,
+    "DESIGNACAO": "diferencaLiquidacao",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 9
+  },
+  {
+    "ID": 212,
+    "DESIGNACAO": "Header",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "N/A",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 213,
+    "DESIGNACAO": "AuditFileVersion",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "10",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 212,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 214,
+    "DESIGNACAO": "CompanyID",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "50",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 212,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 215,
+    "DESIGNACAO": "TaxRegistrationNumber",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "15",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 212,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 216,
+    "DESIGNACAO": "TaxAccountingBasis",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "1",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 212,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 217,
+    "DESIGNACAO": "CompanyName",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "100",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 212,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 218,
+    "DESIGNACAO": "BusinessName",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "60",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 212,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 219,
+    "DESIGNACAO": "FiscalYear",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "4",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 212,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 220,
+    "DESIGNACAO": "StartDate",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "LocalDate",
+    "ESTRUTURA_CAMPO_ID": 212,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 221,
+    "DESIGNACAO": "EndDate",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "LocalDate",
+    "ESTRUTURA_CAMPO_ID": 212,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 222,
+    "DESIGNACAO": "CurrencyCode",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "3",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 212,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 223,
+    "DESIGNACAO": "DateCreated",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "LocalDate",
+    "ESTRUTURA_CAMPO_ID": 212,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 224,
+    "DESIGNACAO": "TaxEntity",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "20",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 212,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 225,
+    "DESIGNACAO": "ProductCompanyTaxID",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "20",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 212,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 226,
+    "DESIGNACAO": "SoftwareValidationNumber",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "15",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 212,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 227,
+    "DESIGNACAO": "ProductID",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "255",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 212,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 228,
+    "DESIGNACAO": "ProductVersion",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "30",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 212,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 229,
+    "DESIGNACAO": "Telephone",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "20",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 212,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 230,
+    "DESIGNACAO": "Email",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "200",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 212,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 231,
+    "DESIGNACAO": "Website",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "60",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 212,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 232,
+    "DESIGNACAO": "CompanyAddress",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "N/A",
+    "ESTRUTURA_CAMPO_ID": 212,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 233,
+    "DESIGNACAO": "BuildingNumber",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "10",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 232,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 234,
+    "DESIGNACAO": "StreetName",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "200",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 232,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 235,
+    "DESIGNACAO": "AddressDetail",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "210",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 232,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 236,
+    "DESIGNACAO": "City",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "50",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 232,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 237,
+    "DESIGNACAO": "PostalCode",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "10",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 232,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 238,
+    "DESIGNACAO": "Province",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "50",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 232,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 239,
+    "DESIGNACAO": "Country",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "2",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 232,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 240,
+    "DESIGNACAO": "Masterfiles",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "N/A",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 241,
+    "DESIGNACAO": "Customer",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "N/A",
+    "ESTRUTURA_CAMPO_ID": 240,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 242,
+    "DESIGNACAO": "CustomerID",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "30",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 241,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 243,
+    "DESIGNACAO": "AccountID",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "30",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 241,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 244,
+    "DESIGNACAO": "CustomerTaxID",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "30",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 241,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 245,
+    "DESIGNACAO": "CompanyName",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "100",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 241,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 246,
+    "DESIGNACAO": "SelfBillingIndicator",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "Boolean",
+    "ESTRUTURA_CAMPO_ID": 241,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 247,
+    "DESIGNACAO": "BillingAddress",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "N/A",
+    "ESTRUTURA_CAMPO_ID": 241,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 248,
+    "DESIGNACAO": "AddressDetail",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "250",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 247,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 249,
+    "DESIGNACAO": "City",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "50",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 247,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 250,
+    "DESIGNACAO": "PostalCode",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "20",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 247,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 251,
+    "DESIGNACAO": "Province",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "50",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 247,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 252,
+    "DESIGNACAO": "Country",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "15",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 247,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 253,
+    "DESIGNACAO": "ShipToAddress",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "N/A",
+    "ESTRUTURA_CAMPO_ID": 241,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 254,
+    "DESIGNACAO": "AddressDetail",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "210",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 253,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 255,
+    "DESIGNACAO": "City",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "50",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 253,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 257,
+    "DESIGNACAO": "Province",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "50",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 253,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 258,
+    "DESIGNACAO": "Country",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "12",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 253,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 266,
+    "DESIGNACAO": "TaxTableEntry",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "N/A",
+    "ESTRUTURA_CAMPO_ID": 1317,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 267,
+    "DESIGNACAO": "TaxType",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "3",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 266,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 268,
+    "DESIGNACAO": "TaxCountryRegion",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "6",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 266,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 269,
+    "DESIGNACAO": "TaxCode",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "10",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 266,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 270,
+    "DESIGNACAO": "Description",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "255",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 266,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 271,
+    "DESIGNACAO": "TaxPercentage",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 266,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 272,
+    "DESIGNACAO": "SourceDocuments",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "N/A",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 273,
+    "DESIGNACAO": "SalesInvoices",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "N/A",
+    "ESTRUTURA_CAMPO_ID": 272,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 274,
+    "DESIGNACAO": "NumberOfEntries",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "Integer",
+    "ESTRUTURA_CAMPO_ID": 273,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 275,
+    "DESIGNACAO": "TotalDebit",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 273,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 276,
+    "DESIGNACAO": "TotalCredit",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 273,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 277,
+    "DESIGNACAO": "Invoice",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "N/A",
+    "ESTRUTURA_CAMPO_ID": 271,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 278,
+    "DESIGNACAO": "InvoiceNo",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "100",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 277,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 279,
+    "DESIGNACAO": "Hash",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "100",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 277,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 280,
+    "DESIGNACAO": "HashControl",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "4000",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 277,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 281,
+    "DESIGNACAO": "Period",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "10",
+    "TIPO_DADO": "Integer",
+    "ESTRUTURA_CAMPO_ID": 277,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 282,
+    "DESIGNACAO": "InvoiceDate",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "LocalDate",
+    "ESTRUTURA_CAMPO_ID": 277,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 283,
+    "DESIGNACAO": "InvoiceType",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "2",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 277,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 284,
+    "DESIGNACAO": "SourceID",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "30",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 277,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 285,
+    "DESIGNACAO": "SystemEntryDate",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "LocalDateTime",
+    "ESTRUTURA_CAMPO_ID": 277,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 286,
+    "DESIGNACAO": "CustomerID",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "30",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 277,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 287,
+    "DESIGNACAO": "MovementStartTime",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "LocalDateTime",
+    "ESTRUTURA_CAMPO_ID": 277,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 288,
+    "DESIGNACAO": "DocumentStatus",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "N/A",
+    "ESTRUTURA_CAMPO_ID": 277,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 289,
+    "DESIGNACAO": "InvoiceStatus",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "1",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 288,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 290,
+    "DESIGNACAO": "InvoiceStatusDate",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "LocalDate",
+    "ESTRUTURA_CAMPO_ID": 288,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 291,
+    "DESIGNACAO": "SourceID",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "30",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 288,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 292,
+    "DESIGNACAO": "SourceBilling",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "1",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 288,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 293,
+    "DESIGNACAO": "SpecialRegimes",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "N/A",
+    "ESTRUTURA_CAMPO_ID": 277,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 294,
+    "DESIGNACAO": "SelfBillingIndicator",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "Boolean",
+    "ESTRUTURA_CAMPO_ID": 293,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 295,
+    "DESIGNACAO": "CashVATSchemeIndicator",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "Boolean",
+    "ESTRUTURA_CAMPO_ID": 293,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 296,
+    "DESIGNACAO": "ThirdPartiesBillingIndicator",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "Boolean",
+    "ESTRUTURA_CAMPO_ID": 293,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 297,
+    "DESIGNACAO": "ShipTo",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "N/A",
+    "ESTRUTURA_CAMPO_ID": 277,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 298,
+    "DESIGNACAO": "DeliveryDate",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "LocalDate",
+    "ESTRUTURA_CAMPO_ID": 297,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 299,
+    "DESIGNACAO": "Address",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "N/A",
+    "ESTRUTURA_CAMPO_ID": 297,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 300,
+    "DESIGNACAO": "AddressDetail",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "250",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 299,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 301,
+    "DESIGNACAO": "City",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "100",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 299,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 302,
+    "DESIGNACAO": "PostalCode",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "100",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 299,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 303,
+    "DESIGNACAO": "Country",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "100",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 299,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 304,
+    "DESIGNACAO": "ShipFrom",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "N/A",
+    "ESTRUTURA_CAMPO_ID": 277,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 305,
+    "DESIGNACAO": "DeliveryDate",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "LocalDate",
+    "ESTRUTURA_CAMPO_ID": 304,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 306,
+    "DESIGNACAO": "Address",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "N/A",
+    "ESTRUTURA_CAMPO_ID": 304,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 307,
+    "DESIGNACAO": "AddressDetail",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "250",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 306,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 308,
+    "DESIGNACAO": "City",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "100",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 306,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 309,
+    "DESIGNACAO": "PostalCode",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "100",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 306,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 310,
+    "DESIGNACAO": "Country",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "100",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 306,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 311,
+    "DESIGNACAO": "Line",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "N/A",
+    "ESTRUTURA_CAMPO_ID": 277,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 312,
+    "DESIGNACAO": "LineNumber",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "Integer",
+    "ESTRUTURA_CAMPO_ID": 311,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 313,
+    "DESIGNACAO": "ProductCode",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "250",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 311,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 314,
+    "DESIGNACAO": "ProductDescription",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "200",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 311,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 315,
+    "DESIGNACAO": "Quantity",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "Integer",
+    "ESTRUTURA_CAMPO_ID": 311,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 316,
+    "DESIGNACAO": "UnitOfMeasure",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "250",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 311,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 317,
+    "DESIGNACAO": "UnitPrice",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "20",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 311,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 318,
+    "DESIGNACAO": "TaxPointDate",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "LocalDate",
+    "ESTRUTURA_CAMPO_ID": 311,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 319,
+    "DESIGNACAO": "Description",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "100",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 311,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 320,
+    "DESIGNACAO": "CreditAmount",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 311,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 321,
+    "DESIGNACAO": "SettlementAmount",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 311,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 322,
+    "DESIGNACAO": "Tax",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "N/A",
+    "ESTRUTURA_CAMPO_ID": 311,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 323,
+    "DESIGNACAO": "TaxType",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "3",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 322,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 324,
+    "DESIGNACAO": "TaxCountryRegion",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "2",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 322,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 325,
+    "DESIGNACAO": "TaxCode",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "10",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 322,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 326,
+    "DESIGNACAO": "TaxPercentage",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 322,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 327,
+    "DESIGNACAO": "DocumentTotals",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "N/A",
+    "ESTRUTURA_CAMPO_ID": 277,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 328,
+    "DESIGNACAO": "TaxPayable",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "N/A",
+    "ESTRUTURA_CAMPO_ID": 327,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 329,
+    "DESIGNACAO": "NetTotal",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "100",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 327,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 330,
+    "DESIGNACAO": "GrossTotal",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "100",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 327,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 331,
+    "DESIGNACAO": "WorkingDocuments",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "N/A",
+    "ESTRUTURA_CAMPO_ID": 272,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 332,
+    "DESIGNACAO": "NumberOfEntries",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "Integer",
+    "ESTRUTURA_CAMPO_ID": 331,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 333,
+    "DESIGNACAO": "TotalDebit",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 331,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 334,
+    "DESIGNACAO": "TotalCredit",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 331,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 19,
+    "DESIGNACAO": "NIF",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "200",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 2
+  },
+  {
+    "ID": 20,
+    "DESIGNACAO": "NM_CONTRIBUINTE",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "200",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 2
+  },
+  {
+    "ID": 21,
+    "DESIGNACAO": "CD_IMPOSTO",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "10",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 2
+  },
+  {
+    "ID": 22,
+    "DESIGNACAO": "NM_IMPOSTO",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "200",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 2
+  },
+  {
+    "ID": 23,
+    "DESIGNACAO": "DT_PAGAMENTO",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "LocalDate",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 2
+  },
+  {
+    "ID": 24,
+    "DESIGNACAO": "Mes",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "2",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 2
+  },
+  {
+    "ID": 25,
+    "DESIGNACAO": "CD_DLI",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "200",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 2
+  },
+  {
+    "ID": 26,
+    "DESIGNACAO": "DAR",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "200",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 2
+  },
+  {
+    "ID": 27,
+    "DESIGNACAO": "VL_PAGO",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 2
+  },
+  {
+    "ID": 28,
+    "DESIGNACAO": "CD_RF",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "200",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 2
+  },
+  {
+    "ID": 29,
+    "DESIGNACAO": "RF_DESCRICAO",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "200",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 2
+  },
+  {
+    "ID": 30,
+    "DESIGNACAO": "CD_BANCO",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "200",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 2
+  },
+  {
+    "ID": 31,
+    "DESIGNACAO": "USER_ID",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 2
+  },
+  {
+    "ID": 32,
+    "DESIGNACAO": "NM_ORIGEM",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "200",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 2
+  },
+  {
+    "ID": 33,
+    "DESIGNACAO": "RF_DOMICILIO",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "200",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 2
+  },
+  {
+    "ID": 34,
+    "DESIGNACAO": "RF_DOMICILIO_DESCRICAO",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "200",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 2
+  },
+  {
+    "ID": 58,
+    "DESIGNACAO": "contribuinte",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "200",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 5
+  },
+  {
+    "ID": 59,
+    "DESIGNACAO": "nif",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "200",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 5
+  },
+  {
+    "ID": 60,
+    "DESIGNACAO": "sector",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "300",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 5
+  },
+  {
+    "ID": 61,
+    "DESIGNACAO": "subSector1",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "300",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 5
+  },
+  {
+    "ID": 62,
+    "DESIGNACAO": "subSector2",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "300",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 5
+  },
+  {
+    "ID": 63,
+    "DESIGNACAO": "tecnicoGestor",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "100",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 5
+  },
+  {
+    "ID": 64,
+    "DESIGNACAO": "estadoContribuinte",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "300",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 5
+  },
+  {
+    "ID": 65,
+    "DESIGNACAO": "sujeitoIIProvisoria",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "100",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 5
+  },
+  {
+    "ID": 66,
+    "DESIGNACAO": "lucroPrejuizo",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 5
+  },
+  {
+    "ID": 67,
+    "DESIGNACAO": "baseCalculo",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 5
+  },
+  {
+    "ID": 68,
+    "DESIGNACAO": "taxaIIProvisoria",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 5
+  },
+  {
+    "ID": 69,
+    "DESIGNACAO": "valorProvisoria",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 5
+  },
+  {
+    "ID": 70,
+    "DESIGNACAO": "deducoes",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 5
+  },
+  {
+    "ID": 71,
+    "DESIGNACAO": "valorPagar",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 5
+  },
+  {
+    "ID": 72,
+    "DESIGNACAO": "valorPago",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 5
+  },
+  {
+    "ID": 73,
+    "DESIGNACAO": "diferenca",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 5
+  },
+  {
+    "ID": 74,
+    "DESIGNACAO": "dataPagamento",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "LocalDate",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 5
+  },
+  {
+    "ID": 75,
+    "DESIGNACAO": "observacao",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "400",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 5
+  },
+  {
+    "ID": 76,
+    "DESIGNACAO": "dataEmissaoNotificacao",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "10",
+    "TIPO_DADO": "LocalDate",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 4
+  },
+  {
+    "ID": 77,
+    "DESIGNACAO": "dataRecepcaoNotificacao",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "10",
+    "TIPO_DADO": "LocalDate",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 4
+  },
+  {
+    "ID": 335,
+    "DESIGNACAO": "WorkDocument",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "N/A",
+    "ESTRUTURA_CAMPO_ID": 331,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 336,
+    "DESIGNACAO": "DocumentNumber",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "60",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 335,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 337,
+    "DESIGNACAO": "Hash",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "172",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 335,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 338,
+    "DESIGNACAO": "HashControl",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "70",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 335,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 339,
+    "DESIGNACAO": "Period",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "Integer",
+    "ESTRUTURA_CAMPO_ID": 335,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 340,
+    "DESIGNACAO": "WorkDate",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "LocalDate",
+    "ESTRUTURA_CAMPO_ID": 335,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 341,
+    "DESIGNACAO": "WorkType",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "2",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 335,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 342,
+    "DESIGNACAO": "SourceID",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "30",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 335,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 343,
+    "DESIGNACAO": "SystemEntryDate",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "LocalDateTime",
+    "ESTRUTURA_CAMPO_ID": 335,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 344,
+    "DESIGNACAO": "CustomerID",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "100",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 335,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 345,
+    "DESIGNACAO": "DocumentStatus",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "N/A",
+    "ESTRUTURA_CAMPO_ID": 345,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 346,
+    "DESIGNACAO": "WorkStatus",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "50",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 345,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 347,
+    "DESIGNACAO": "WorkStatusDate",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "50",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 345,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 348,
+    "DESIGNACAO": "SourceID",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "50",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 345,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 349,
+    "DESIGNACAO": "SourceBilling",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "50",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 345,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 350,
+    "DESIGNACAO": "Line",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "N/A",
+    "ESTRUTURA_CAMPO_ID": 335,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 351,
+    "DESIGNACAO": "LineNumber",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "Integer",
+    "ESTRUTURA_CAMPO_ID": 350,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 352,
+    "DESIGNACAO": "ProductCode",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "60",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 350,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 353,
+    "DESIGNACAO": "ProductDescription",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "200",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 350,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 354,
+    "DESIGNACAO": "Quantity",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 350,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 355,
+    "DESIGNACAO": "UnitOfMeasure",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "20",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 350,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 356,
+    "DESIGNACAO": "UnitPrice",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "50",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 350,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 357,
+    "DESIGNACAO": "TaxPointDate",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "LocalDate",
+    "ESTRUTURA_CAMPO_ID": 350,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 358,
+    "DESIGNACAO": "Description",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "200",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 350,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 359,
+    "DESIGNACAO": "CreditAmount",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 350,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 360,
+    "DESIGNACAO": "TaxExemptionReason",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "60",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 350,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 361,
+    "DESIGNACAO": "TaxExemptionCode",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "3",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 350,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 362,
+    "DESIGNACAO": "SettlementAmount",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "100",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 350,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 363,
+    "DESIGNACAO": "Tax",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "N/A",
+    "ESTRUTURA_CAMPO_ID": 350,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 364,
+    "DESIGNACAO": "TaxType",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "3",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 363,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 365,
+    "DESIGNACAO": "TaxCountryRegion",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "2",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 363,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 366,
+    "DESIGNACAO": "TaxCode",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "10",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 363,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 367,
+    "DESIGNACAO": "TaxPercentage",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 363,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 368,
+    "DESIGNACAO": "DocumentTotals",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "N/A",
+    "ESTRUTURA_CAMPO_ID": 335,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 369,
+    "DESIGNACAO": "TaxPayable",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "50",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 368,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 370,
+    "DESIGNACAO": "NetTotal",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 368,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 371,
+    "DESIGNACAO": "GrossTotal",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 368,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1300,
+    "DESIGNACAO": "strNifAgente",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "15",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1302,
+    "TIPO_REPORTE_ID": 10
+  },
+  {
+    "ID": 1301,
+    "DESIGNACAO": "strAnoMes",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "8",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1302,
+    "TIPO_REPORTE_ID": 10
+  },
+  {
+    "ID": 1302,
+    "DESIGNACAO": "registros",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "List",
+    "ESTRUTURA_CAMPO_ID": 1302,
+    "TIPO_REPORTE_ID": 10
+  },
+  {
+    "ID": 1303,
+    "DESIGNACAO": "GeneralledgerAccounts",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "N/A",
+    "ESTRUTURA_CAMPO_ID": 212,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1304,
+    "DESIGNACAO": "Account",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "N/A",
+    "ESTRUTURA_CAMPO_ID": 1303,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1305,
+    "DESIGNACAO": "AccountID",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "30",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1304,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1306,
+    "DESIGNACAO": "AccountDescription",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "100",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1304,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1307,
+    "DESIGNACAO": "OpeningDebitBalance",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 1304,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1308,
+    "DESIGNACAO": "OpeningCreditBalance",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 1304,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1309,
+    "DESIGNACAO": "ClosingDebitBalance",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 1304,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1310,
+    "DESIGNACAO": "ClosingCreditBalance",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 1304,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1311,
+    "DESIGNACAO": "GroupingCategory",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "1",
+    "TIPO_DADO": "Integer",
+    "ESTRUTURA_CAMPO_ID": 1304,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1312,
+    "DESIGNACAO": "GroupingCode",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "30",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1304,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1348,
+    "DESIGNACAO": "BuildingNumber",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "10",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1342,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1349,
+    "DESIGNACAO": "StreetName",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "200",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1342,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1350,
+    "DESIGNACAO": "PostalCode",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "20",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1342,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1351,
+    "DESIGNACAO": "AddressDetail",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "210",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1342,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1352,
+    "DESIGNACAO": "City",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "50",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1342,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1353,
+    "DESIGNACAO": "Province",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "50",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1342,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1354,
+    "DESIGNACAO": "Country",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "2",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1342,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1355,
+    "DESIGNACAO": "BuildingNumber",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "10",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1343,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1356,
+    "DESIGNACAO": "StreetName",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "200",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1343,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1357,
+    "DESIGNACAO": "PostalCode",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "20",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1343,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1358,
+    "DESIGNACAO": "AddressDetail",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "210",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1343,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1359,
+    "DESIGNACAO": "City",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "50",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1343,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1360,
+    "DESIGNACAO": "Province",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "50",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1343,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1361,
+    "DESIGNACAO": "Country",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "2",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1343,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1378,
+    "DESIGNACAO": "Lines",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "N/A",
+    "ESTRUTURA_CAMPO_ID": 1367,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1379,
+    "DESIGNACAO": "DebitLine",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "N/A",
+    "ESTRUTURA_CAMPO_ID": 1378,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1380,
+    "DESIGNACAO": "RecordID",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "30",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1379,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1381,
+    "DESIGNACAO": "AccountID",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "30",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1379,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1382,
+    "DESIGNACAO": "SourceDocumentID",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "60",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1379,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1383,
+    "DESIGNACAO": "SystemEntryDate",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "LocalDateTime",
+    "ESTRUTURA_CAMPO_ID": 1379,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1384,
+    "DESIGNACAO": "Description",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "200",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1379,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1385,
+    "DESIGNACAO": "DebitAmount",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 1379,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1386,
+    "DESIGNACAO": "CreditLine",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "N/A",
+    "ESTRUTURA_CAMPO_ID": 1378,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1387,
+    "DESIGNACAO": "RecordID",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "30",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1386,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1388,
+    "DESIGNACAO": "AccountID",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "30",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1386,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1389,
+    "DESIGNACAO": "SourceDocumentID",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "60",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1386,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1390,
+    "DESIGNACAO": "SystemEntryDate",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "LocalDateTime",
+    "ESTRUTURA_CAMPO_ID": 1386,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1391,
+    "DESIGNACAO": "Description",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "200",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1386,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1392,
+    "DESIGNACAO": "CreditAmount",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 1386,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1393,
+    "DESIGNACAO": "JournalID",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "30",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1366,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1394,
+    "DESIGNACAO": "Description",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "60",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1366,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1395,
+    "DESIGNACAO": "MovementOfGoods",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "N/A",
+    "ESTRUTURA_CAMPO_ID": 272,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1396,
+    "DESIGNACAO": "Payments",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "N/A",
+    "ESTRUTURA_CAMPO_ID": 272,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1449,
+    "DESIGNACAO": "LineNumber",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "Integer",
+    "ESTRUTURA_CAMPO_ID": 1415,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1450,
+    "DESIGNACAO": "OrderReferences",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "N/A",
+    "ESTRUTURA_CAMPO_ID": 1415,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1451,
+    "DESIGNACAO": "ProductCode",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "60",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1415,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1452,
+    "DESIGNACAO": "ProductDescription",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "200",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1415,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1453,
+    "DESIGNACAO": "Quantity",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 1415,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1454,
+    "DESIGNACAO": "UnitOfMeasure",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "20",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1415,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1455,
+    "DESIGNACAO": "UnitPrice",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 1415,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1456,
+    "DESIGNACAO": "TaxBase",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 1415,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1457,
+    "DESIGNACAO": "TaxPointDate",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "LocalDate",
+    "ESTRUTURA_CAMPO_ID": 1415,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1458,
+    "DESIGNACAO": "References",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "N/A",
+    "ESTRUTURA_CAMPO_ID": 1415,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1459,
+    "DESIGNACAO": "Description",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "100",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1415,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1460,
+    "DESIGNACAO": "ProductSerialNumber",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "N/A",
+    "ESTRUTURA_CAMPO_ID": 1415,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1477,
+    "DESIGNACAO": "TaxType",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "3",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1464,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1462,
+    "DESIGNACAO": "DebitAmount",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 1415,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1463,
+    "DESIGNACAO": "CreditAmount",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 1415,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1464,
+    "DESIGNACAO": "Tax",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "N/A",
+    "ESTRUTURA_CAMPO_ID": 1415,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1465,
+    "DESIGNACAO": "TaxExemptionReason",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "60",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1415,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1466,
+    "DESIGNACAO": "TaxExemptionCode",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "3",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1415,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1467,
+    "DESIGNACAO": "SettlementAmount",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 1415,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1468,
+    "DESIGNACAO": "CustomsInformation",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "N/A",
+    "ESTRUTURA_CAMPO_ID": 1415,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1484,
+    "DESIGNACAO": "TaxPayable",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 1416,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1485,
+    "DESIGNACAO": "NetTotal",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 1416,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1471,
+    "DESIGNACAO": "OriginatingON",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "60",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1450,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1472,
+    "DESIGNACAO": "OrderDate",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "LocalDate",
+    "ESTRUTURA_CAMPO_ID": 1450,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1473,
+    "DESIGNACAO": "Reference",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "60",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1458,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1474,
+    "DESIGNACAO": "Reason",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "50",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1458,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1475,
+    "DESIGNACAO": "Description",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "100",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1458,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1476,
+    "DESIGNACAO": "SerialNumber",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "100",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1460,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1478,
+    "DESIGNACAO": "TaxCountryRegion",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "2",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1464,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1479,
+    "DESIGNACAO": "TaxCode",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "10",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1464,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1480,
+    "DESIGNACAO": "TaxPercentage",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 1464,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1481,
+    "DESIGNACAO": "TaxAmount",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 1464,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1482,
+    "DESIGNACAO": "ARCNo",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "21",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1468,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1483,
+    "DESIGNACAO": "IECAmount",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 1468,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1486,
+    "DESIGNACAO": "GrossTotal",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 1416,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1487,
+    "DESIGNACAO": "Currency",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "N/A",
+    "ESTRUTURA_CAMPO_ID": 1416,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1488,
+    "DESIGNACAO": "Settlement",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "N/A",
+    "ESTRUTURA_CAMPO_ID": 1416,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1489,
+    "DESIGNACAO": "Payment",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "N/A",
+    "ESTRUTURA_CAMPO_ID": 1416,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1503,
+    "DESIGNACAO": "NumberOfMovementLines",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "Integer",
+    "ESTRUTURA_CAMPO_ID": 1395,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1504,
+    "DESIGNACAO": "TotalQuantityIssued",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 1395,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1505,
+    "DESIGNACAO": "StockMovement",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "N/A",
+    "ESTRUTURA_CAMPO_ID": 1395,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1506,
+    "DESIGNACAO": "DocumentStatus",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "N/A",
+    "ESTRUTURA_CAMPO_ID": 1505,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1507,
+    "DESIGNACAO": "Hash",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "172",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1505,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1508,
+    "DESIGNACAO": "HashControl",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "70",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1505,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1509,
+    "DESIGNACAO": "Period",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "Integer",
+    "ESTRUTURA_CAMPO_ID": 1505,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1510,
+    "DESIGNACAO": "MovementDate",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "LocalDate",
+    "ESTRUTURA_CAMPO_ID": 1505,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1511,
+    "DESIGNACAO": "MovementType",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "2",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1505,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1512,
+    "DESIGNACAO": "SystemEntryDate",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "LocalDateTime",
+    "ESTRUTURA_CAMPO_ID": 1505,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 35,
+    "DESIGNACAO": "Nif",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "200",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 1
+  },
+  {
+    "ID": 36,
+    "DESIGNACAO": "Nif",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "200",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 3
+  },
+  {
+    "ID": 37,
+    "DESIGNACAO": "NomeDoFuncionario",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "200",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 3
+  },
+  {
+    "ID": 38,
+    "DESIGNACAO": "ReferenciaDaDeclaracao",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "200",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 3
+  },
+  {
+    "ID": 39,
+    "DESIGNACAO": "RendimentosPagos",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 3
+  },
+  {
+    "ID": 40,
+    "DESIGNACAO": "RendimentosIsentos",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 3
+  },
+  {
+    "ID": 41,
+    "DESIGNACAO": "IrtRetido",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 3
+  },
+  {
+    "ID": 1397,
+    "DESIGNACAO": "Invoice",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "N/A",
+    "ESTRUTURA_CAMPO_ID": 273,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1398,
+    "DESIGNACAO": "InvoiceNo",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "60",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1397,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1399,
+    "DESIGNACAO": "DocumentStatus",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "N/A",
+    "ESTRUTURA_CAMPO_ID": 1397,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1400,
+    "DESIGNACAO": "Hash",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "172",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1397,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1401,
+    "DESIGNACAO": "HashControl",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "70",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1397,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1402,
+    "DESIGNACAO": "Period",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "Integer",
+    "ESTRUTURA_CAMPO_ID": 1397,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1403,
+    "DESIGNACAO": "InvoiceDate",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "LocalDate",
+    "ESTRUTURA_CAMPO_ID": 1397,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1404,
+    "DESIGNACAO": "InvoiceType",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "2",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1397,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1405,
+    "DESIGNACAO": "SpecialRegimes",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "N/A",
+    "ESTRUTURA_CAMPO_ID": 1397,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1406,
+    "DESIGNACAO": "SourceID",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "30",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1397,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1407,
+    "DESIGNACAO": "EACCode",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "30",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1397,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1408,
+    "DESIGNACAO": "SystemEntryDate",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "LocalDateTime",
+    "ESTRUTURA_CAMPO_ID": 1397,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1409,
+    "DESIGNACAO": "TransactionID",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "70",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1397,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1410,
+    "DESIGNACAO": "CustomerID",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "30",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1397,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1411,
+    "DESIGNACAO": "ShipTo",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "N/A",
+    "ESTRUTURA_CAMPO_ID": 1397,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1412,
+    "DESIGNACAO": "ShipFrom",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "N/A",
+    "ESTRUTURA_CAMPO_ID": 1397,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1413,
+    "DESIGNACAO": "MovementEndTime",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "LocalDateTime",
+    "ESTRUTURA_CAMPO_ID": 1397,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1414,
+    "DESIGNACAO": "MovementStartTime",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "LocalDateTime",
+    "ESTRUTURA_CAMPO_ID": 1397,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1415,
+    "DESIGNACAO": "Line",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "N/A",
+    "ESTRUTURA_CAMPO_ID": 1397,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1416,
+    "DESIGNACAO": "DocumentTotals",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "N/A",
+    "ESTRUTURA_CAMPO_ID": 1397,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1417,
+    "DESIGNACAO": "WithholdingTax",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "N/A",
+    "ESTRUTURA_CAMPO_ID": 1397,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1418,
+    "DESIGNACAO": "InvoiceStatus",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "1",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1399,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1419,
+    "DESIGNACAO": "InvoiceStatusDate",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "LocalDateTime",
+    "ESTRUTURA_CAMPO_ID": 1399,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1420,
+    "DESIGNACAO": "SourceID",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "30",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1399,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1421,
+    "DESIGNACAO": "SourceBilling",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "1",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1399,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1422,
+    "DESIGNACAO": "SelfBillingIndicator",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "Boolean",
+    "ESTRUTURA_CAMPO_ID": 1405,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1423,
+    "DESIGNACAO": "CashVATSchemeIndicator",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "Boolean",
+    "ESTRUTURA_CAMPO_ID": 1405,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1424,
+    "DESIGNACAO": "ThirdPartiesBillingIndicator",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "Boolean",
+    "ESTRUTURA_CAMPO_ID": 1405,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1425,
+    "DESIGNACAO": "DeliveryID",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "255",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1411,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1426,
+    "DESIGNACAO": "DeliveryDate",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "LocalDate",
+    "ESTRUTURA_CAMPO_ID": 1411,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1427,
+    "DESIGNACAO": "WarehouseID",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "50",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1411,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1428,
+    "DESIGNACAO": "LocationID",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "50",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1411,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1429,
+    "DESIGNACAO": "Address",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "N/A",
+    "ESTRUTURA_CAMPO_ID": 1411,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1430,
+    "DESIGNACAO": "BuildingNumber",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "10",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1429,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1431,
+    "DESIGNACAO": "StreetName",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "200",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1429,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1432,
+    "DESIGNACAO": "AddressDetail",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "210",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1429,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1433,
+    "DESIGNACAO": "City",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "50",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1429,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1434,
+    "DESIGNACAO": "PostalCode",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "20",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1429,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1435,
+    "DESIGNACAO": "Province",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "50",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1429,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1436,
+    "DESIGNACAO": "Country",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "2",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1429,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1437,
+    "DESIGNACAO": "DeliveryID",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "255",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1412,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1438,
+    "DESIGNACAO": "DeliveryDate",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "LocalDate",
+    "ESTRUTURA_CAMPO_ID": 1412,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1439,
+    "DESIGNACAO": "WarehouseID",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "50",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1412,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1440,
+    "DESIGNACAO": "LocationID",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "50",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1412,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1441,
+    "DESIGNACAO": "Address",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "N/A",
+    "ESTRUTURA_CAMPO_ID": 1412,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1442,
+    "DESIGNACAO": "BuildingNumber",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "10",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1441,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1443,
+    "DESIGNACAO": "StreetName",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "200",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1441,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1444,
+    "DESIGNACAO": "AddressDetail",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "210",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1441,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1445,
+    "DESIGNACAO": "City",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "50",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1441,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1446,
+    "DESIGNACAO": "PostalCode",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "20",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1441,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1447,
+    "DESIGNACAO": "Province",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "50",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1441,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1448,
+    "DESIGNACAO": "Country",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "2",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1441,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1513,
+    "DESIGNACAO": "TransactionID",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "70",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1505,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1514,
+    "DESIGNACAO": "CustomerID",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "30",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1505,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1515,
+    "DESIGNACAO": "SupplierID",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "30",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1505,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1516,
+    "DESIGNACAO": "SourceID",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "30",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1505,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1517,
+    "DESIGNACAO": "EACCode",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "30",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1505,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1518,
+    "DESIGNACAO": "MovementComments",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "30",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1505,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1519,
+    "DESIGNACAO": "ShipTo",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "N/A",
+    "ESTRUTURA_CAMPO_ID": 1505,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1520,
+    "DESIGNACAO": "ShipFrom",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "N/A",
+    "ESTRUTURA_CAMPO_ID": 1505,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1521,
+    "DESIGNACAO": "Line",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "N/A",
+    "ESTRUTURA_CAMPO_ID": 1505,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1522,
+    "DESIGNACAO": "DocumentTotals",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "N/A",
+    "ESTRUTURA_CAMPO_ID": 1505,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1523,
+    "DESIGNACAO": "MovementStatus",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "1",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1506,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1524,
+    "DESIGNACAO": "MovementStatusDate",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "LocalDateTime",
+    "ESTRUTURA_CAMPO_ID": 1506,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1525,
+    "DESIGNACAO": "Reason",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "50",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1506,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1526,
+    "DESIGNACAO": "SourceID",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "30",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1506,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1527,
+    "DESIGNACAO": "SourceBilling",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "1",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1506,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1528,
+    "DESIGNACAO": "DeliveryID",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "255",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1519,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1529,
+    "DESIGNACAO": "DeliveryDate",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "LocalDate",
+    "ESTRUTURA_CAMPO_ID": 1519,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1530,
+    "DESIGNACAO": "WarehouseID",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "50",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1519,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1531,
+    "DESIGNACAO": "LocationID",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "30",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1519,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1532,
+    "DESIGNACAO": "Address",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "N/A",
+    "ESTRUTURA_CAMPO_ID": 1519,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1533,
+    "DESIGNACAO": "BuildingNumber",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "10",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1532,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1534,
+    "DESIGNACAO": "StreetName",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "200",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1532,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1535,
+    "DESIGNACAO": "AddressDetail",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "210",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1532,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1536,
+    "DESIGNACAO": "City",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "50",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1532,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1537,
+    "DESIGNACAO": "PostalCode",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "20",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1532,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1538,
+    "DESIGNACAO": "Province",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "50",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1532,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1539,
+    "DESIGNACAO": "Country",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "2",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1532,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1541,
+    "DESIGNACAO": "DeliveryID",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "255",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1520,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1542,
+    "DESIGNACAO": "DeliveryDate",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "LocalDate",
+    "ESTRUTURA_CAMPO_ID": 1520,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1543,
+    "DESIGNACAO": "WarehouseID",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "50",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1520,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1544,
+    "DESIGNACAO": "LocationID",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "30",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1520,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1545,
+    "DESIGNACAO": "Address",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "N/A",
+    "ESTRUTURA_CAMPO_ID": 1520,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1546,
+    "DESIGNACAO": "BuildingNumber",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "10",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1545,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1547,
+    "DESIGNACAO": "StreetName",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "200",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1545,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1548,
+    "DESIGNACAO": "AddressDetail",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "210",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1545,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1549,
+    "DESIGNACAO": "City",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "50",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1545,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1550,
+    "DESIGNACAO": "PostalCode",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "20",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1545,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1551,
+    "DESIGNACAO": "Province",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "50",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1545,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1552,
+    "DESIGNACAO": "Country",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "2",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1545,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1553,
+    "DESIGNACAO": "MovementEndTime",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "LocalDateTime",
+    "ESTRUTURA_CAMPO_ID": 1505,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1554,
+    "DESIGNACAO": "MovementStartTime",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "LocalDateTime",
+    "ESTRUTURA_CAMPO_ID": 1505,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1555,
+    "DESIGNACAO": "CodigoIdentificacaoDocumento",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "200",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1505,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1556,
+    "DESIGNACAO": "LineNumber",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "Integer",
+    "ESTRUTURA_CAMPO_ID": 1521,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1557,
+    "DESIGNACAO": "OrderReferences",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "N/A",
+    "ESTRUTURA_CAMPO_ID": 1521,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1558,
+    "DESIGNACAO": "ProductCode",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "60",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1521,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1559,
+    "DESIGNACAO": "ProductDescription",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "200",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1521,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1560,
+    "DESIGNACAO": "Quantity",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 1521,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1561,
+    "DESIGNACAO": "UnitOfMeasure",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "20",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1521,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1562,
+    "DESIGNACAO": "UnitPrice",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 1521,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1563,
+    "DESIGNACAO": "Description",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "100",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1521,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1564,
+    "DESIGNACAO": "ProductSerialNumber",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "N/A",
+    "ESTRUTURA_CAMPO_ID": 1521,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1565,
+    "DESIGNACAO": "DebitAmount",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 1521,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1566,
+    "DESIGNACAO": "Tax",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "N/A",
+    "ESTRUTURA_CAMPO_ID": 1521,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1567,
+    "DESIGNACAO": "TaxExemptionReason",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "60",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1521,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1568,
+    "DESIGNACAO": "TaxExemptionCode",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "3",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1521,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1569,
+    "DESIGNACAO": "SettlementAmount",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 1521,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1570,
+    "DESIGNACAO": "CustomsInformation",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "N/A",
+    "ESTRUTURA_CAMPO_ID": 1521,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1571,
+    "DESIGNACAO": "OriginatingON",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "60",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1557,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1572,
+    "DESIGNACAO": "OrderDate",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "LocalDate",
+    "ESTRUTURA_CAMPO_ID": 1557,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1573,
+    "DESIGNACAO": "SerialNumber",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "100",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1564,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1574,
+    "DESIGNACAO": "TaxType",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "3",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1566,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1575,
+    "DESIGNACAO": "TaxCountryRegion",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "2",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1566,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1576,
+    "DESIGNACAO": "TaxCode",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "3",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1566,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1577,
+    "DESIGNACAO": "TaxPercentage",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 1566,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1578,
+    "DESIGNACAO": "ARCNo",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "21",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1570,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1579,
+    "DESIGNACAO": "IECAmount",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 1570,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1580,
+    "DESIGNACAO": "TaxPayable",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 1522,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1581,
+    "DESIGNACAO": "NetTotal",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 1522,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1582,
+    "DESIGNACAO": "GrossTotal",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 1522,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1583,
+    "DESIGNACAO": "Currency",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "N/A",
+    "ESTRUTURA_CAMPO_ID": 1522,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1584,
+    "DESIGNACAO": "CurrencyCode",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "3",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1583,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1585,
+    "DESIGNACAO": "CurrencyAmount",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 1583,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1586,
+    "DESIGNACAO": "ExchangeRate",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 1583,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1587,
+    "DESIGNACAO": "EACCode",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "10",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 335,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1588,
+    "DESIGNACAO": "TransactionID",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "70",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 335,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1589,
+    "DESIGNACAO": "CustomerID",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "30",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 335,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1590,
+    "DESIGNACAO": "DocumentStatus",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "N/A",
+    "ESTRUTURA_CAMPO_ID": 335,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1596,
+    "DESIGNACAO": "Currency",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "N/A",
+    "ESTRUTURA_CAMPO_ID": 368,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1597,
+    "DESIGNACAO": "CurrencyCode",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "3",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1596,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1598,
+    "DESIGNACAO": "CurrencyAmount",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 1596,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1599,
+    "DESIGNACAO": "ExchangeRate",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 1596,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1600,
+    "DESIGNACAO": "OrderReferences",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "N/A",
+    "ESTRUTURA_CAMPO_ID": 350,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1601,
+    "DESIGNACAO": "TaxBase",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 350,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1602,
+    "DESIGNACAO": "References",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "N/A",
+    "ESTRUTURA_CAMPO_ID": 350,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1603,
+    "DESIGNACAO": "ProductSerialNumber",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "N/A",
+    "ESTRUTURA_CAMPO_ID": 350,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1604,
+    "DESIGNACAO": "DebitAmount",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 350,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1605,
+    "DESIGNACAO": "CustomsInformation",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "N/A",
+    "ESTRUTURA_CAMPO_ID": 350,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1606,
+    "DESIGNACAO": "OriginatingON",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "60",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1600,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1607,
+    "DESIGNACAO": "OrderDate",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "LocalDate",
+    "ESTRUTURA_CAMPO_ID": 1600,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1608,
+    "DESIGNACAO": "Reference",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "60",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1602,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1609,
+    "DESIGNACAO": "Reason",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "50",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1602,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1610,
+    "DESIGNACAO": "SerialNumber",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "100",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1603,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1611,
+    "DESIGNACAO": "TaxAmount",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 363,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1612,
+    "DESIGNACAO": "ARCNo",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "21",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1605,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1613,
+    "DESIGNACAO": "IECAmount",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 1605,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1614,
+    "DESIGNACAO": "NumberOfEntries",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "Integer",
+    "ESTRUTURA_CAMPO_ID": 1396,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1615,
+    "DESIGNACAO": "TotalDebit",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 1396,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1616,
+    "DESIGNACAO": "TotalCredit",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 1396,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1617,
+    "DESIGNACAO": "Payment",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "N/A",
+    "ESTRUTURA_CAMPO_ID": 1396,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1618,
+    "DESIGNACAO": "PaymentRefNo",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "60",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1617,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1619,
+    "DESIGNACAO": "Period",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "Integer",
+    "ESTRUTURA_CAMPO_ID": 1617,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1620,
+    "DESIGNACAO": "TransactionID",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "70",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1617,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1621,
+    "DESIGNACAO": "TransactionDate",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "LocalDate",
+    "ESTRUTURA_CAMPO_ID": 1617,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1622,
+    "DESIGNACAO": "PaymentType",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "2",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1617,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1623,
+    "DESIGNACAO": "Description",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "200",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1617,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1624,
+    "DESIGNACAO": "SystemID",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "60",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1617,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1625,
+    "DESIGNACAO": "DocumentStatus",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "N/A",
+    "ESTRUTURA_CAMPO_ID": 1617,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1627,
+    "DESIGNACAO": "PaymentMethod",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "N/A",
+    "ESTRUTURA_CAMPO_ID": 1617,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1,
+    "DESIGNACAO": "Conta",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "20",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 1
+  },
+  {
+    "ID": 2,
+    "DESIGNACAO": "CodigoTipoVeiculo",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "2",
+    "TIPO_DADO": "Integer",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 1
+  },
+  {
+    "ID": 3,
+    "DESIGNACAO": "AnoFabrico",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "4",
+    "TIPO_DADO": "Integer",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 1
+  },
+  {
+    "ID": 4,
+    "DESIGNACAO": "Matricula",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "15",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 1
+  },
+  {
+    "ID": 6,
+    "DESIGNACAO": "DataMatricula",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "10",
+    "TIPO_DADO": "LocalDate",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 1
+  },
+  {
+    "ID": 7,
+    "DESIGNACAO": "CodigoMarca",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "50",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 1
+  },
+  {
+    "ID": 8,
+    "DESIGNACAO": "CodigoTipoAlimentacao",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "2",
+    "TIPO_DADO": "Integer",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 1
+  },
+  {
+    "ID": 9,
+    "DESIGNACAO": "CodigoClassificacao",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "2",
+    "TIPO_DADO": "Integer",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 1
+  },
+  {
+    "ID": 11,
+    "DESIGNACAO": "Cilindrada",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "Integer",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 1
+  },
+  {
+    "ID": 12,
+    "DESIGNACAO": "Potencia",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "Integer",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 1
+  },
+  {
+    "ID": 13,
+    "DESIGNACAO": "PesoBruto",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "Integer",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 1
+  },
+  {
+    "ID": 14,
+    "DESIGNACAO": "Comprimento",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 1
+  },
+  {
+    "ID": 15,
+    "DESIGNACAO": "Boca",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 1
+  },
+  {
+    "ID": 16,
+    "DESIGNACAO": "Pontal",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 1
+  },
+  {
+    "ID": 17,
+    "DESIGNACAO": "PotenciaMotor",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "Integer",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 1
+  },
+  {
+    "ID": 18,
+    "DESIGNACAO": "PesoMaximoAutorizadoDescolagem",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "Integer",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 1
+  },
+  {
+    "ID": 78,
+    "DESIGNACAO": "contribuinte",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "200",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 6
+  },
+  {
+    "ID": 79,
+    "DESIGNACAO": "nif",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "200",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 6
+  },
+  {
+    "ID": 80,
+    "DESIGNACAO": "sector",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "300",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 6
+  },
+  {
+    "ID": 81,
+    "DESIGNACAO": "subSector1",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "300",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 6
+  },
+  {
+    "ID": 82,
+    "DESIGNACAO": "subSector2",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "300",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 6
+  },
+  {
+    "ID": 83,
+    "DESIGNACAO": "tecnicoGestor",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "100",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 6
+  },
+  {
+    "ID": 84,
+    "DESIGNACAO": "estadoContribuinte",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "300",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 6
+  },
+  {
+    "ID": 85,
+    "DESIGNACAO": "metodoEntrega",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "50",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 6
+  },
+  {
+    "ID": 86,
+    "DESIGNACAO": "registoSiaf",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "100",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 6
+  },
+  {
+    "ID": 87,
+    "DESIGNACAO": "dataEntrega",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "10",
+    "TIPO_DADO": "LocalDate",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 6
+  },
+  {
+    "ID": 88,
+    "DESIGNACAO": "dataEntrega",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "10",
+    "TIPO_DADO": "LocalDate",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 6
+  },
+  {
+    "ID": 89,
+    "DESIGNACAO": "beneficioFiscal",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "100",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 6
+  },
+  {
+    "ID": 90,
+    "DESIGNACAO": "obrigacaoDeclarativa",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "100",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 6
+  },
+  {
+    "ID": 91,
+    "DESIGNACAO": "proveitos",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 6
+  },
+  {
+    "ID": 92,
+    "DESIGNACAO": "lucroTributavelPrejuizo",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 6
+  },
+  {
+    "ID": 93,
+    "DESIGNACAO": "deducoesMateriaColetavel",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 6
+  },
+  {
+    "ID": 94,
+    "DESIGNACAO": "materiaColetavel",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 6
+  },
+  {
+    "ID": 95,
+    "DESIGNACAO": "taxaImposto",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 6
+  },
+  {
+    "ID": 96,
+    "DESIGNACAO": "impostoCalculado",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 6
+  },
+  {
+    "ID": 97,
+    "DESIGNACAO": "acrescimoColeta",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 6
+  },
+  {
+    "ID": 98,
+    "DESIGNACAO": "deducoesColeta",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 6
+  },
+  {
+    "ID": 99,
+    "DESIGNACAO": "impostoPagar",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 6
+  },
+  {
+    "ID": 100,
+    "DESIGNACAO": "impostoPago",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 6
+  },
+  {
+    "ID": 101,
+    "DESIGNACAO": "contribuinte",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "200",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 7
+  },
+  {
+    "ID": 102,
+    "DESIGNACAO": "nif",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "200",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 7
+  },
+  {
+    "ID": 103,
+    "DESIGNACAO": "tecnicoResponsavel",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "100",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 7
+  },
+  {
+    "ID": 104,
+    "DESIGNACAO": "dataCedencia",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "10",
+    "TIPO_DADO": "LocalDate",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 7
+  },
+  {
+    "ID": 105,
+    "DESIGNACAO": "valorConcedido",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 7
+  },
+  {
+    "ID": 106,
+    "DESIGNACAO": "valorCompensado",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 7
+  },
+  {
+    "ID": 107,
+    "DESIGNACAO": "valorPorCompensar",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 7
+  },
+  {
+    "ID": 108,
+    "DESIGNACAO": "dataUltimaCompensacao",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "10",
+    "TIPO_DADO": "LocalDate",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 7
+  },
+  {
+    "ID": 109,
+    "DESIGNACAO": "pontoSituacaoCredito",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "400",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 7
+  },
+  {
+    "ID": 166,
+    "DESIGNACAO": "obrigatoriedade",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "50",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 9
+  },
+  {
+    "ID": 167,
+    "DESIGNACAO": "valorPagoAutoNoticia",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 9
+  },
+  {
+    "ID": 168,
+    "DESIGNACAO": "estadoAutoNoticia",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "50",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 9
+  },
+  {
+    "ID": 169,
+    "DESIGNACAO": "envioContenciosoAutoNoticia",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "50",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 9
+  },
+  {
+    "ID": 170,
+    "DESIGNACAO": "exercicioInspecionadoAutonoticia",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 9
+  },
+  {
+    "ID": 171,
+    "DESIGNACAO": "impostoLiquidacao",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 9
+  },
+  {
+    "ID": 172,
+    "DESIGNACAO": "envioContenciosoAutoNoticia",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "50",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 9
+  },
+  {
+    "ID": 173,
+    "DESIGNACAO": "dataEnvioNotificacaoLiquidacao",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "10",
+    "TIPO_DADO": "LocalDate",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 9
+  },
+  {
+    "ID": 174,
+    "DESIGNACAO": "dataLimiteRespostaLiquidacao",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "10",
+    "TIPO_DADO": "LocalDate",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 9
+  },
+  {
+    "ID": 175,
+    "DESIGNACAO": "dataRespostaNotificacaoLiquidacao",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "10",
+    "TIPO_DADO": "LocalDate",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 9
+  },
+  {
+    "ID": 176,
+    "DESIGNACAO": "valorPagoLiquidacao",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 9
+  },
+  {
+    "ID": 177,
+    "DESIGNACAO": "diferenca",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 9
+  },
+  {
+    "ID": 1313,
+    "DESIGNACAO": "HeaderComment",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "255",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 212,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1314,
+    "DESIGNACAO": "Fax",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "20",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 212,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1315,
+    "DESIGNACAO": "Supplier",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "N/A",
+    "ESTRUTURA_CAMPO_ID": 240,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1316,
+    "DESIGNACAO": "Product",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "N/A",
+    "ESTRUTURA_CAMPO_ID": 240,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1317,
+    "DESIGNACAO": "TaxTable",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "N/A",
+    "ESTRUTURA_CAMPO_ID": 240,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1318,
+    "DESIGNACAO": "GeneralledgerAccounts",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "N/A",
+    "ESTRUTURA_CAMPO_ID": 240,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1321,
+    "DESIGNACAO": "ProductType",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "1",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1316,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1319,
+    "DESIGNACAO": "TaxExpirationDate",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "LocalDate",
+    "ESTRUTURA_CAMPO_ID": 266,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1320,
+    "DESIGNACAO": "TaxAmount",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 266,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1322,
+    "DESIGNACAO": "ProductCode",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "60",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1316,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1323,
+    "DESIGNACAO": "ProductGroup",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "50",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1316,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1324,
+    "DESIGNACAO": "ProductDescription",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "200",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1316,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1325,
+    "DESIGNACAO": "ProductNumberCode",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "60",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1316,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1326,
+    "DESIGNACAO": "UNNumber",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "4",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1316,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1327,
+    "DESIGNACAO": "Contact",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "50",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 241,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1328,
+    "DESIGNACAO": "Telephone",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "20",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 241,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1329,
+    "DESIGNACAO": "Fax",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "20",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 241,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1330,
+    "DESIGNACAO": "Email",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "254",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 241,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1331,
+    "DESIGNACAO": "Website",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "60",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 241,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1332,
+    "DESIGNACAO": "BuildingNumber",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "15",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 247,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1333,
+    "DESIGNACAO": "StreetName",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "200",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 247,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1334,
+    "DESIGNACAO": "BuildingNumber",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "10",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 253,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1335,
+    "DESIGNACAO": "StreetName",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "200",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 253,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1336,
+    "DESIGNACAO": "PostalCode",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "20",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 253,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1337,
+    "DESIGNACAO": "SupplierID",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "30",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1315,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1338,
+    "DESIGNACAO": "AccountID",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "30",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1315,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1339,
+    "DESIGNACAO": "SupplierTaxID",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "15",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1315,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1340,
+    "DESIGNACAO": "CompanyName",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "100",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1315,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1341,
+    "DESIGNACAO": "Contact",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "50",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1315,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1342,
+    "DESIGNACAO": "BillingAddress",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "N/A",
+    "ESTRUTURA_CAMPO_ID": 1315,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1343,
+    "DESIGNACAO": "ShipFromAddress",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "N/A",
+    "ESTRUTURA_CAMPO_ID": 1315,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1344,
+    "DESIGNACAO": "Telephone",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "20",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1315,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1345,
+    "DESIGNACAO": "Fax",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "20",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1315,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1346,
+    "DESIGNACAO": "WebSite",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "60",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1315,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1347,
+    "DESIGNACAO": "Email",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "254",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1315,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1363,
+    "DESIGNACAO": "NumberOfEntries",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "Integer",
+    "ESTRUTURA_CAMPO_ID": 1362,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1364,
+    "DESIGNACAO": "TotalDebit",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 1362,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1362,
+    "DESIGNACAO": "GeneralLedgerEntries",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "N/A",
+    "ESTRUTURA_CAMPO_ID": null,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1365,
+    "DESIGNACAO": "TotalCredit",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 1362,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1366,
+    "DESIGNACAO": "Journal",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "N/A",
+    "ESTRUTURA_CAMPO_ID": 1362,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1367,
+    "DESIGNACAO": "Transaction",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "N/A",
+    "ESTRUTURA_CAMPO_ID": 1366,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1368,
+    "DESIGNACAO": "TransactionID",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "70",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1367,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1369,
+    "DESIGNACAO": "Period",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "Integer",
+    "ESTRUTURA_CAMPO_ID": 1367,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1370,
+    "DESIGNACAO": "TransactionDate",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "LocalDate",
+    "ESTRUTURA_CAMPO_ID": 1367,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1371,
+    "DESIGNACAO": "SourceID",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "30",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1367,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1372,
+    "DESIGNACAO": "Description",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "200",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1367,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1373,
+    "DESIGNACAO": "DocArchivaNumber",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "20",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1367,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1374,
+    "DESIGNACAO": "TransactionType",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "1",
+    "TIPO_DADO": "Integer",
+    "ESTRUTURA_CAMPO_ID": 1367,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1375,
+    "DESIGNACAO": "GLPostingDate",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "LocalDate",
+    "ESTRUTURA_CAMPO_ID": 1367,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1376,
+    "DESIGNACAO": "CustomerID",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "30",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1367,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1377,
+    "DESIGNACAO": "SupplierID",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "30",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1367,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1490,
+    "DESIGNACAO": "CurrencyCode",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "3",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1487,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1491,
+    "DESIGNACAO": "CurrencyAmount",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 1487,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1492,
+    "DESIGNACAO": "ExchangeRate",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 1487,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1493,
+    "DESIGNACAO": "SettlementDiscount",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "30",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1488,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1494,
+    "DESIGNACAO": "SettlementAmount",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 1488,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1495,
+    "DESIGNACAO": "SettlementDate",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "LocalDate",
+    "ESTRUTURA_CAMPO_ID": 1488,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1496,
+    "DESIGNACAO": "PaymentTerms",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "100",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1488,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1497,
+    "DESIGNACAO": "PaymentMechanism",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "2",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1489,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1498,
+    "DESIGNACAO": "PaymentAmount",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 1489,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1499,
+    "DESIGNACAO": "PaymentDate",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "LocalDate",
+    "ESTRUTURA_CAMPO_ID": 1489,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1500,
+    "DESIGNACAO": "WithholdingTaxType",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "3",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1417,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1501,
+    "DESIGNACAO": "WithholdingTaxDescription",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "60",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1417,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1502,
+    "DESIGNACAO": "WithholdingTaxAmount",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 1417,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1591,
+    "DESIGNACAO": "WorkStatus",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "1",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1590,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1592,
+    "DESIGNACAO": "WorkStatusDate",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "LocalDateTime",
+    "ESTRUTURA_CAMPO_ID": 1590,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1593,
+    "DESIGNACAO": "Reason",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "50",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1590,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1594,
+    "DESIGNACAO": "SourceID",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "30",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1590,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1595,
+    "DESIGNACAO": "SourceBilling",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "1",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1590,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1628,
+    "DESIGNACAO": "SourceID",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "30",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1617,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1629,
+    "DESIGNACAO": "SystemEntryDate",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "LocalDateTime",
+    "ESTRUTURA_CAMPO_ID": 1617,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1630,
+    "DESIGNACAO": "CustomerID",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "30",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1617,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1631,
+    "DESIGNACAO": "Line",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "N/A",
+    "ESTRUTURA_CAMPO_ID": 1617,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1632,
+    "DESIGNACAO": "DocumentTotals",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "N/A",
+    "ESTRUTURA_CAMPO_ID": 1617,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1633,
+    "DESIGNACAO": "WithholdingTax",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "N/A",
+    "ESTRUTURA_CAMPO_ID": 1617,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1634,
+    "DESIGNACAO": "SourceDocumentID",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "N/A",
+    "ESTRUTURA_CAMPO_ID": 1631,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1635,
+    "DESIGNACAO": "SourceDocument",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "60",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1634,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1636,
+    "DESIGNACAO": "InvoiceDate",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "LocalDate",
+    "ESTRUTURA_CAMPO_ID": 1634,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1637,
+    "DESIGNACAO": "Description",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "200",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1634,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1638,
+    "DESIGNACAO": "LineNumber",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "Integer",
+    "ESTRUTURA_CAMPO_ID": 1631,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1639,
+    "DESIGNACAO": "SettlementAmount",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 1631,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1640,
+    "DESIGNACAO": "DebitAmount",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 1631,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1641,
+    "DESIGNACAO": "CreditAmount",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 1631,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1642,
+    "DESIGNACAO": "Tax",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "N/A",
+    "ESTRUTURA_CAMPO_ID": 1631,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1643,
+    "DESIGNACAO": "TaxExemptionReason",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "60",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1631,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1644,
+    "DESIGNACAO": "TaxExemptionCode",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "3",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1631,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1645,
+    "DESIGNACAO": "TaxType",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "3",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1642,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1646,
+    "DESIGNACAO": "TaxCountryRegion",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "2",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1642,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1647,
+    "DESIGNACAO": "TaxCode",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "10",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1642,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1648,
+    "DESIGNACAO": "TaxPercentage",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 1642,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1649,
+    "DESIGNACAO": "TaxAmount",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 1642,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1650,
+    "DESIGNACAO": "TaxPayable",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 1632,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1651,
+    "DESIGNACAO": "NetTotal",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 1632,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1652,
+    "DESIGNACAO": "GrossTotal",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 1632,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1653,
+    "DESIGNACAO": "Currency",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "N/A",
+    "ESTRUTURA_CAMPO_ID": 1632,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1654,
+    "DESIGNACAO": "Settlement",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 1,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "N/A",
+    "ESTRUTURA_CAMPO_ID": 1632,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1655,
+    "DESIGNACAO": "CurrencyCode",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "3",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1653,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1656,
+    "DESIGNACAO": "CurrencyAmount",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 1653,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1657,
+    "DESIGNACAO": "ExchangeRate",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 1653,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1658,
+    "DESIGNACAO": "SettlementAmount",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "N/A",
+    "TIPO_DADO": "BigDecimal",
+    "ESTRUTURA_CAMPO_ID": 1654,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1659,
+    "DESIGNACAO": "WithholdingTaxType",
+    "IS_OBRIGATORIO": 1,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "3",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1633,
+    "TIPO_REPORTE_ID": 11
+  },
+  {
+    "ID": 1660,
+    "DESIGNACAO": "WithholdingTaxDescription",
+    "IS_OBRIGATORIO": 0,
+    "IS_TIPO_COMPLEXO": 0,
+    "TAMANHO": "60",
+    "TIPO_DADO": "String",
+    "ESTRUTURA_CAMPO_ID": 1633,
+    "TIPO_REPORTE_ID": 11
+  }
+]
