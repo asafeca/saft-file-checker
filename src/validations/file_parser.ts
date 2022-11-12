@@ -8,25 +8,23 @@ export class FileParser {
 
         const xmlHandler = new XmlHandler(file);
 
-        let object: Map<String, any> = new Map();
+        let obj: Map<String, object> = new Map();
 
-        object.set('generalLedgerEntries', this.buildObject(xmlHandler, xmlHandler.selectOne('GeneralLedgerEntries'), new Array<string>()))
-        object.set('header', this.buildObject(xmlHandler, xmlHandler.selectOne('Header'), new Array<string>()))
-        object.set('masterFiles', this.buildObject(xmlHandler, xmlHandler.selectOne('MasterFiles'),
+        obj.set('generalLedgerEntries', this.buildObject(xmlHandler, xmlHandler.selectOne('GeneralLedgerEntries'), new Array<string>()))
+        obj.set('header', this.buildObject(xmlHandler, xmlHandler.selectOne('Header'), new Array<string>()))
+        obj.set('masterFiles', this.buildObject(xmlHandler, xmlHandler.selectOne('MasterFiles'),
             new Array<string>('Customer', 'Product', 'Supplier', 'TaxTableEntry')))
 
-        object.set('sourceDocuments', this.buildObject(xmlHandler, xmlHandler.selectOne('SourceDocuments'),
+        obj.set('sourceDocuments', this.buildObject(xmlHandler, xmlHandler.selectOne('SourceDocuments'),
             new Array<string>('Invoice', 'Line', 'WorkDocument', 'TaxTableEntry')))
 
-        console.log(object)
-
-        return object
+        return obj
 
     }
 
 
-    private static buildObject(xmlHandler: XmlHandler, root: ChildNode, buildAsList: string[]): Map<string, any> {
-        let object: Map<string, any> = new Map()
+    private static buildObject(xmlHandler: XmlHandler, root: ChildNode, buildAsList: string[]): Map<string, Object> {
+        let object: Map<string, Object> = new Map()
 
         if (root !== undefined && root !== null) {
 
@@ -42,7 +40,7 @@ export class FileParser {
 
 
                         const children = xmlHandler.selectAll(root, node.nodeName)
-                        let objects: Array<Map<string, any>> = new Array()
+                        let objects: Array<Map<string, Object>> = new Array()
 
                         if (children) {
 
@@ -73,7 +71,7 @@ export class FileParser {
                     }
 
 
-                    object.set(StringHelper.firstCharToLowerCase(node.nodeName), node.textContent)
+                    object.set(StringHelper.firstCharToLowerCase(node.nodeName), node.textContent ?? new Object)
                     continue
 
                 }

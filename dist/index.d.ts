@@ -1,2 +1,2 @@
-import { IDataResult } from './components/commons/iresult';
-export declare function parseFile(content: Uint8Array): IDataResult;
+import { ErrorDetail } from './domain/models/detalheErro';
+export declare function parseFile(content: Uint8Array): Array<ErrorDetail>;

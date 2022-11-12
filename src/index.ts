@@ -1,11 +1,11 @@
 import { SaftFileParser } from './domain/SaftFileParser';
 import { SaftFileParserImpl } from './domain/SaftFileParserImpl';
-import { IDataResult } from './components/commons/iresult';
 import * as fs from 'fs'
+import { ErrorDetail } from './domain/models/detalheErro';
 
 
 
-export function parseFile(content: Uint8Array): IDataResult {
+export function parseFile(content: Uint8Array): Array<ErrorDetail> {
   const dataView = new Uint8Array(content);
   const parser: SaftFileParser = new SaftFileParserImpl();
 

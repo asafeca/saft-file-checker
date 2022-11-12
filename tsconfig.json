@@ -1,15 +1,17 @@
 {
-    "compilerOptions":{
-        "module":"commonjs",
-        "outDir":"./dist",
-        "target":"ES5",
+    "compilerOptions": {
+        "module": "commonjs",
+        "outDir": "./dist",
+        "target": "ES6",
         "baseUrl": "./dist",
-        "declaration":true,
-        "strict":true
+        "declaration": true,
+        "strict": true
     },
-
-    "include":[
+    "include": [
         "src/**/*"
     ],
-    "exclude":["node_modules","**/__test__/*"]
+    "exclude": [
+        "node_modules",
+        "**/__test__/*"
+    ]
 }

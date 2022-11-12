@@ -1,5 +1,5 @@
 import { Reporte } from "./reporte";
-export declare class DetalheErro {
+export declare class ErrorDetail {
     campo: string;
     designacao: string;
     numeroLinha: Number;

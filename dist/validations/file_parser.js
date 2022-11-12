@@ -1,61 +1,51 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.FileParser = void 0;
-var xml_handler_1 = require("./xml_handler");
-var string_helpers_1 = require("../utils/string_helpers");
-var FileParser = /** @class */ (function () {
-    function FileParser() {
+const xml_handler_1 = require("./xml_handler");
+const string_helpers_1 = require("../utils/string_helpers");
+class FileParser {
+    static parse(file, reporte) {
+        const xmlHandler = new xml_handler_1.XmlHandler(file);
+        let obj = new Map();
+        obj.set('generalLedgerEntries', this.buildObject(xmlHandler, xmlHandler.selectOne('GeneralLedgerEntries'), new Array()));
+        obj.set('header', this.buildObject(xmlHandler, xmlHandler.selectOne('Header'), new Array()));
+        obj.set('masterFiles', this.buildObject(xmlHandler, xmlHandler.selectOne('MasterFiles'), new Array('Customer', 'Product', 'Supplier', 'TaxTableEntry')));
+        obj.set('sourceDocuments', this.buildObject(xmlHandler, xmlHandler.selectOne('SourceDocuments'), new Array('Invoice', 'Line', 'WorkDocument', 'TaxTableEntry')));
+        return obj;
     }
-    FileParser.parse = function (file, reporte) {
-        var xmlHandler = new xml_handler_1.XmlHandler(file);
-        var object = new Map();
-        object.set('generalLedgerEntries', this.buildObject(xmlHandler, xmlHandler.selectOne('GeneralLedgerEntries'), new Array()));
-        object.set('header', this.buildObject(xmlHandler, xmlHandler.selectOne('Header'), new Array()));
-        object.set('masterFiles', this.buildObject(xmlHandler, xmlHandler.selectOne('MasterFiles'), new Array('Customer', 'Product', 'Supplier', 'TaxTableEntry')));
-        object.set('sourceDocuments', this.buildObject(xmlHandler, xmlHandler.selectOne('SourceDocuments'), new Array('Invoice', 'Line', 'WorkDocument', 'TaxTableEntry')));
-        console.log(object);
-        return object;
-    };
-    FileParser.buildObject = function (xmlHandler, root, buildAsList) {
-        var object;
+    static buildObject(xmlHandler, root, buildAsList) {
+        var _a;
+        let object = new Map();
         if (root !== undefined && root !== null) {
-            object = new Map();
-            var nodes = root.childNodes;
-            var _loop_1 = function (key) {
-                var node = nodes.item(key);
+            const nodes = root.childNodes;
+            for (const key of Object.keys(nodes)) {
+                const node = nodes.item(key);
                 if (node.nodeName !== '#text' && node.nodeName !== undefined && node.nodeName !== null) {
-                    var item = buildAsList.find(function (item) { return item === node.nodeName; });
+                    const item = buildAsList.find(item => item === node.nodeName);
                     if (item !== undefined && node.nodeName !== null && item === node.nodeName) {
-                        var children = xmlHandler.selectAll(root, node.nodeName);
-                        var objects = new Array();
+                        const children = xmlHandler.selectAll(root, node.nodeName);
+                        let objects = new Array();
                         if (children) {
-                            for (var _b = 0, _c = Object.keys(children); _b < _c.length; _b++) {
-                                var _key = _c[_b];
-                                var element = children.at(_key);
-                                objects.push(this_1.buildObject(xmlHandler, element, buildAsList));
+                            for (const _key of Object.keys(children)) {
+                                const element = children.at(_key);
+                                objects.push(this.buildObject(xmlHandler, element, buildAsList));
                             }
                             object.set(string_helpers_1.StringHelper.firstCharToLowerCase(node.nodeName), objects);
-                            return "continue";
+                            continue;
                         }
-                        return "continue";
+                        continue;
                     }
                     if (xmlHandler.hasChildren(node)) {
-                        object.set(string_helpers_1.StringHelper.firstCharToLowerCase(node.nodeName), this_1.buildObject(xmlHandler, node, buildAsList));
-                        return "continue";
+                        object.set(string_helpers_1.StringHelper.firstCharToLowerCase(node.nodeName), this.buildObject(xmlHandler, node, buildAsList));
+                        continue;
                     }
-                    object.set(string_helpers_1.StringHelper.firstCharToLowerCase(node.nodeName), node.textContent);
-                    return "continue";
+                    object.set(string_helpers_1.StringHelper.firstCharToLowerCase(node.nodeName), (_a = node.textContent) !== null && _a !== void 0 ? _a : new Object);
+                    continue;
                 }
-            };
-            var this_1 = this;
-            for (var _i = 0, _a = Object.keys(nodes); _i < _a.length; _i++) {
-                var key = _a[_i];
-                _loop_1(key);
             }
             return object;
         }
         return object;
-    };
-    return FileParser;
-}());
+    }
+}
 exports.FileParser = FileParser;

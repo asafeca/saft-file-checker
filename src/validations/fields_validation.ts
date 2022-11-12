@@ -1,22 +1,50 @@
-import { DetalheErro } from "../domain/models/detalheErro";
+import { ErrorDetail } from "../domain/models/detalheErro";
 import { Reporte } from "../domain/models/reporte";
-import { EstruturaCampos } from "../domain/models/structure";
+import { FieldRules } from "../domain/models/field_rules";
 import { FileParser } from "./file_parser";
 import { FileParserStorage } from "./file_starage_parser";
+import { FileModelSAFT } from "./model/saft/FileModelSAFT";
 
 export class FieldsValidation {
 
-    static validate(reporte: Reporte, estruturaCampos: Array<EstruturaCampos>): Array<DetalheErro> {
+    validate({ reporte, modelRules }: { reporte: Reporte, modelRules: Array<FieldRules> }): Array<ErrorDetail> {
 
         FileParserStorage.dispose();
 
-        let fileModels!: Object
 
         const file = reporte.file;
-        fileModels = FileParser.parse(file, reporte)
 
-        // FileParserStorage.set(fileModels = FileParser.parse(file, reporte), reporte = reporte)
+        FileParserStorage.set(FileParser.parse(file, reporte), reporte = reporte)
 
-        return new Array<DetalheErro>()
+
+        return this.processSaft({ fileModel: this.mapToFileModel(FileParserStorage.fileModel), modelRules: modelRules })
+
+
     }
+
+
+    mapToFileModel(obj: Object): FileModelSAFT {
+
+
+        let fromEntries = Object.fromEntries(obj as Map<string, Object>)
+        let strData = JSON.stringify(fromEntries)
+
+        console.log(strData)
+
+
+        // const model: FileModelSAFT = JSON.parse(fromEntries)
+        // console.log(model.header)
+
+
+        return new FileModelSAFT
+
+    }
+
+
+    processSaft({ fileModel, modelRules }: { fileModel: FileModelSAFT, modelRules: Array<FieldRules> }): Array<ErrorDetail> {
+
+        return new Array()
+    }
+
+
 }

@@ -1,6 +1,6 @@
 import { Reporte } from "./reporte";
 
-export class DetalheErro {
+export class ErrorDetail {
     public campo!: string;
     public designacao!: string;
     public numeroLinha!: Number;
