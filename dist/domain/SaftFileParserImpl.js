@@ -16,7 +16,8 @@ class SaftFileParserImpl {
     parse(file) {
         let tipoReporte = new tipo_reporte_1.TipoReporte(11, "11");
         let reporte = new reporte_1.Reporte(11, tipoReporte, file);
-        let stringData = require("/home/asafeca/repository/projects/saft-file-checker/dist/assets/data.json");
+        const rootDir = require('path').resolve('./');
+        let stringData = require(`${rootDir}/dist/assets/data.json`);
         const jsonStr = JSON.stringify(stringData);
         const structureList = JSON.parse(jsonStr);
         let filteredList = new Array();

@@ -25,8 +25,12 @@ export class FieldsValidation {
 
     mapToFileModel(obj: Object): FileModelSAFT {
 
+        let model = obj as Map<string, Object>
+        let header = model.get('header') as Map<string, Object>
 
-        let fromEntries = Object.fromEntries(obj as Map<string, Object>)
+
+        let fromEntries = Object.fromEntries(header)
+
         let strData = JSON.stringify(fromEntries)
 
         console.log(strData)

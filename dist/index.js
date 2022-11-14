@@ -9,6 +9,7 @@ function parseFile(content) {
     return parser.parse(dataView, 11);
 }
 exports.parseFile = parseFile;
-const file = fs.readFileSync("/home/asafeca/repository/projects/saft-file-checker/dist/assets/saft.xml");
+const rootDir = require('path').resolve('./');
+const file = fs.readFileSync(`${rootDir}/dist/assets/saft.xml`);
 const result = new SaftFileParserImpl_1.SaftFileParserImpl().parse(file);
 module.exports = parseFile;

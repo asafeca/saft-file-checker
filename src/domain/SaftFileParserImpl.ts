@@ -22,7 +22,9 @@ export class SaftFileParserImpl implements SaftFileParser {
 
     let reporte = new Reporte(11, tipoReporte, file)
 
-    let stringData = require("/home/asafeca/repository/projects/saft-file-checker/dist/assets/data.json")
+    const rootDir = require('path').resolve('./')
+
+    let stringData = require(`${rootDir}/dist/assets/data.json`)
 
     const jsonStr = JSON.stringify(stringData);
     const structureList: Array<FieldRules> = JSON.parse(jsonStr);

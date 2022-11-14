@@ -13,8 +13,10 @@ export function parseFile(content: Uint8Array): Array<ErrorDetail> {
   return parser.parse(dataView, 11);
 }
 
+const rootDir = require('path').resolve('./')
 
-const file = fs.readFileSync("/home/asafeca/repository/projects/saft-file-checker/dist/assets/saft.xml");
+
+const file = fs.readFileSync(`${rootDir}/dist/assets/saft.xml`);
 
 
 const result = new SaftFileParserImpl().parse(file)

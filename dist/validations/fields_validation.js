@@ -12,7 +12,9 @@ class FieldsValidation {
         return this.processSaft({ fileModel: this.mapToFileModel(file_starage_parser_1.FileParserStorage.fileModel), modelRules: modelRules });
     }
     mapToFileModel(obj) {
-        let fromEntries = Object.fromEntries(obj);
+        let model = obj;
+        let header = model.get('header');
+        let fromEntries = Object.fromEntries(header);
         let strData = JSON.stringify(fromEntries);
         console.log(strData);
         // const model: FileModelSAFT = JSON.parse(fromEntries)
